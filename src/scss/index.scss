@@ -163,6 +163,8 @@ a.demo:hover{
     top: 0;
     position: relative;
     transition: top ease 0.3s;
+    margin-top: 2px;
+    margin-bottom: 8px;
 }
 
 .proj-body:hover{
@@ -225,63 +227,14 @@ a.demo:hover{
      /* big landscape tablets, laptops, and desktops */ }
 @media (min-width:1281px) { /* hi-res laptops and desktops */ }
 
-//Projects Box CSS
-// .block {
-//     max-width: 650px;
-//     height: 200px;
-//     margin-top: 10px;
-//     margin-bottom: 10px;
-//     border: 1px solid red;
-// }
 
-// .image img {
-//     float: left;
-//     max-width: 30%;
-//     height: auto;
-// }
+// Archive CSS
 
-// .proj-header-text {
-//     float: right;
-// }
+.table {
+    border: 2px solid var(--theme-color);
+    color: var(--text-normal);
+}
 
-// .proj-description {
-//     float: right;
-// }
-
-
-//testing
-
-// .post-container {
-//     max-width: 700px;
-//     height: 200px;
-//     margin: 20px 20px 0 0;
-//     border: 3px solid #333;
-//     overflow: hidden;
-//     padding: 5px;
-// }
-// .post-thumb {
-//     float: left;
-//     padding: 20px 0;
-//     padding-right: 10px;
-// }
-// .post-thumb img {
-//     display: block;
-//     max-width: 250px;
-//     height: auto;
-// }
-// .post-content {
-//     margin-left: 210px;
-//     font-family: 'Open Sans';
-// }
-// .post-title {
-//     font-family: "Inter", sans-serif;
-//     font-weight: 600;
-//     font-size: 1.7rem;
-// }
-
-// .techused-text {
-//     font-family: 'Courier New', Courier, monospace;
-// }
-
-
-//Hide Scollbar
+table .row {
+    background: white;
+}

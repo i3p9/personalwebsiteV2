@@ -29,14 +29,14 @@ const ProjectPage = () => {
           <h1 className="home-name">Projects</h1>
           <Link to="/archive" class="proj-link">visit the archive</Link>
         </div>
-        <div class="row row-col-sm-1 row-cols-md-1 g-4 project-start">
+        <div class="row-col-sm-1 row-col-md-1 row-col-lg-1 g-4 project-start">
           <div class="col">
             <div class="card proj-body">
               <div class="card-body">
                 <h5 class="card-title proj-title">mac-setup</h5>
                 <p class="card-text">Guide to setup a fresh macOS installation automatically, saving time and effort. Includes 3rd-party apps, ssh and gpg setups</p>
                 <a href="https://github.com/i3p9/mac-setup" target="_blank" rel="noreferrer" class="button-git git">github</a> <a href="https://mac-setup.vercel.app/#/" target="_blank" rel="noreferrer" class="button-demo demo">demo</a>
-                <p class="card-text card-techused"><span class="techused-font">Markdown | Docsify JS</span></p>
+                <p class="card-text card-techused"><span class="techused-font">MD | Docsify JS</span></p>
               </div>
             </div>
           </div>
