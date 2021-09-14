@@ -7,18 +7,13 @@ const DarkModeToggle = () => {
   const darkMode = useDarkMode(false);
 
   return (
+      <a href="#" onClick={darkMode.toggle}>{ darkMode.value ? 'ya' : 'no' }</a>
     // <div>
-    //   <button type="button" onClick={darkMode.disable}></button>
-    //   <Toggle checked={darkMode.value} onChange={darkMode.toggle} />
-    //   <button type="button" onClick={darkMode.enable}></button>
+    //   <Toggle
+    //     defaultChecked={darkMode.value}
+    //     aria-label='No label tag'
+    //     onChange={darkMode.toggle} />
     // </div>
-
-    <div>
-      <Toggle
-        defaultChecked={darkMode.value}
-        aria-label='No label tag'
-        onChange={darkMode.toggle} />
-    </div>
 
   );
 };
