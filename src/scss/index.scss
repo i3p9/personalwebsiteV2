@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap');
 body{
     background-color: var(--bg);
     font-family: "Open Sans";
@@ -23,6 +23,8 @@ body.light-mode {
     --text-bold: #0D171A;
     --text-normal: #0D171A;
     --text-link: #0D171A;
+    --code-bg: #1C1C1B;
+    --code-text: #D0D3D4;
 }
 
   body.dark-mode {
@@ -32,14 +34,9 @@ body.light-mode {
     --text-bold: white;
     --text-normal: #D3D3D3;
     --text-link: white;
+    --code-bg: #1C1C1B;
+    --code-text: #D0D3D4;
 }
-
-
-// body.dark-mode{
-//     background-color: black;
-//     font-family: "Open Sans";
-//     font-size: 1rem;
-// }
 
 //NavBar CSS
 nav a{
@@ -48,16 +45,28 @@ nav a{
     color: var(--text-link);
     margin-right: 20px;
     padding: 5px;
+    font-family: 'Jetbrains Mono', monospace;
+    font-weight: 200;
 }
 
 nav a:hover{
     color: var(--text-link);
 }
 
+.nav-active{
+    text-decoration: underline;
+}
+
+// .navName {
+//     font-family: "Inter", sans-serif;
+//     font-weight: 700;
+//     font-size: 1.6rem;
+//     color: var(--text-bold);
+// }
 .navName {
-    font-family: "Inter", sans-serif;
-    font-weight: 700;
-    font-size: 1.6rem;
+    font-family: "Jetbrains Mono", monospace;
+    font-weight: 300;
+    font-size: 1.2rem;
     color: var(--text-bold);
 }
 
@@ -77,42 +86,87 @@ nav a:hover{
 
 // ProjectPage CSS
 
+.proj-link{
+    font-family: 'Jetbrains Mono', monospace;
+    font-weight: 200;
+    color: var(--text-link);
+    font-style: italic;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
 .proj-title{
     font-family: "Inter", sans-serif;
     font-weight: 600;
     color: var(--text-bold);
 }
 
-.button-project {
+.button-git {
     background-color: var(--theme-color);
     color: var(--bg);
-    border: 0px solid white;
-    //font-family: "Open Sans",sans-serif;
-    font-weight: 300;
-    padding: 1px 17px;
+    border: 2px solid var(--theme-color);
+    font-family: 'Jetbrains Mono', monospace;
+    font-weight: 100;
     text-align: justify;
     text-decoration: none;
     display: inline-block;
     font-size: 1rem;
-    margin: 2px 0px;
     cursor: pointer;
     border-radius: 2px;
+    padding: 5px 5px;
+    margin: 4px 4px;
 }
 
-a:hover{
+.button-demo {
+    background-color: var(--bg);
+    color: var(--theme-color);
+    border: 2px solid var(--theme-color);
+    font-family: 'Jetbrains Mono', monospace;
+    font-weight: 100;
+    text-align: justify;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 5px 5px;
+    margin: 4px 4px;
+}
+
+a.git:hover{
     color: var(--bg);
     cursor: pointer;
 }
 
-.card-techused{
-    text-align: right;
+a.demo:hover{
+    color: var(--theme-color);
+}
 
+.card-techused {
+    text-align: right;
+}
+.techused-font{
+    text-align: right;
+    font-family: 'Jetbrains Mono', monospace;
+    font-weight: 300;
+    color: var(--code-text);
+    padding: 2px;
+    background: var(--code-bg);
+    border-radius: 2px;
+    font-size: 0.7rem;
 }
 
 .proj-body {
     border: 3px solid var(--theme-color);
     border-radius: 0px;
     background-color: var(--bg);
+    top: 0;
+    position: relative;
+    transition: top ease 0.3s;
+}
+
+.proj-body:hover{
+    top: -5px;
 }
 
 .proj-image {
@@ -132,13 +186,6 @@ a:hover{
     margin-left: 0px;
     margin-right: 0px;
 }
-
-
-
-
-
-
-
 
 
 

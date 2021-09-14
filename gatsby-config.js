@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
-    title: "mysitev2",
+    title: "Fahim Faisal",
   },
   plugins: [
     "gatsby-plugin-use-dark-mode",
