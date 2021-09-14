@@ -2,8 +2,6 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 import DarkModeToggle from './themetoggle'
 import useDarkMode from 'use-dark-mode'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAdjust } from '@fortawesome/free-solid-svg-icons'
 
 const Navbar = () => {
     const darkMode = useDarkMode(false);

@@ -15,38 +15,46 @@ const ArchivePage = () => {
                 <div>
                     <h1 className="home-name">Archive</h1>
                 </div>
-                <table class="table table-light table-hover">
+                <table class="table table-default">
                     <thead>
                         <tr>
                             <th scope="col">#</th>
                             <th scope="col">Title</th>
-                            <th scope="col">Made with</th>
+                            <th scope="col" class="d-none d-md-table-cell">Made with</th>
                             <th scope="col">Link</th>
                         </tr>
                     </thead>
                     <tbody>
+                    <tr>
                         <th scope="row">2021</th>
                         <td>Hello World</td>
-                        <td>React Node</td>
-                        <td><Link to="https://github.com"><FontAwesomeIcon icon={ faExternalLinkAlt }/></Link></td>
+                        <td class="d-none d-md-table-cell">React Node</td>
+                        <td><a href="https://github.com">linkto</a></td>
+                        </tr>
                     </tbody>
                     <tbody>
+                        <tr>
                         <th scope="row">2021</th>
                         <td>Hello World</td>
-                        <td>React Node</td>
-                        <td><Link to="https://github.com"><FontAwesomeIcon icon={ faExternalLinkAlt }/></Link></td>
-                    </tbody>
+                        <td class="d-none d-md-table-cell">React Node</td>
+                        <td><a href="https://github.com"><FontAwesomeIcon icon={ faExternalLinkAlt }/></a></td>
+                        </tr>
+                        </tbody>
                     <tbody>
+                        <tr>
                         <th scope="row">2021</th>
                         <td>Hello World</td>
-                        <td>React Node</td>
-                        <td><Link to="https://github.com"><FontAwesomeIcon icon={ faExternalLinkAlt }/></Link></td>
-                    </tbody>
+                        <td class="d-none d-md-table-cell">React Node</td>
+                        <td><a href="https://github.com"><FontAwesomeIcon icon={ faExternalLinkAlt }/></a></td>
+                        </tr>
+                        </tbody>
                     <tbody>
+                    <tr>
                         <th scope="row">2021</th>
                         <td>Hello World</td>
-                        <td>React Node</td>
-                        <td><Link to="https://github.com"><FontAwesomeIcon icon={ faExternalLinkAlt }/></Link></td>
+                        <td class="d-none d-md-table-cell">React Node</td>
+                        <td><a href="https://github.com"><FontAwesomeIcon icon={ faExternalLinkAlt }/></a></td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
