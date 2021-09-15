@@ -8,6 +8,7 @@ import "@fontsource/open-sans"
 import "@fontsource/yanone-kaffeesatz"
 import '../scss/index.scss'
 import Navbar from '../components/navbar'
+import NowPlaying from '../components/nowplaying'
 // Step 2: Define your component
 const IndexPage = () => {
   return (
@@ -19,6 +20,7 @@ const IndexPage = () => {
       I'm a software engineer from Dhaka, Bangladesh. I like building things with Python and JS (Mostly Python tbh).
 My hobbies include space, making playlists and taking pictures (of space, go figure). I also like comedy shows and I'm a big fan of SNL.
 Currently I'm looking for work and prototyping cool stuffs on my own.
+  <NowPlaying/>
       </div>
       <div>
       </div>
