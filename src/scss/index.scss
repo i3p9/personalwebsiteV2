@@ -84,6 +84,9 @@ nav a:hover{
     margin-top: 5.5rem;
 }
 
+a {
+    color: var(--text-link);
+}
 
 // ProjectPage CSS
 
@@ -156,6 +159,7 @@ a.demo:hover{
     border-radius: 2px;
     font-size: 0.7rem;
     text-align: right;
+    margin-left: 5px;
 }
 
 .proj-body {
@@ -235,6 +239,7 @@ a.demo:hover{
 .table {
     border: 2px solid var(--theme-color);
     color: var(--text-normal);
+    margin-top: 10px;
 }
 
 table .row {
@@ -273,6 +278,7 @@ a:hover{
     color: var(--text-link);
 }
 
+// Nowplaying CSS
 .now-playing {
     margin-top: 20px;
     font-family: 'Jetbrains Mono', monospace;
