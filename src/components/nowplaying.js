@@ -8,7 +8,7 @@ const NowPlaying = () => {
     // let isPlaying = false;
     const user = "xfahim"
     const apiKey = "6326961698ec80353b8b0f1118f76238"
-    let callURL = "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&limit=1&user=" + user + "&api_key=" + apiKey + "&format=json"
+    let callURL = "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&limit=1&user=" + user + "&api_key=" + apiKey + "&format=json"
     useEffect(() => {
         fetch(callURL)
         .then (res => res.json())
@@ -20,7 +20,7 @@ const NowPlaying = () => {
             // }
         })
     },[])
-    //console.log(isPlaying)
+    console.log(track)
     return(
         <div className="now-playing"><FontAwesomeIcon icon={ faSpotify } /> <span>Now Playing: </span> { track } by { artist }</div>
     )
