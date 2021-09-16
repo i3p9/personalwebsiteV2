@@ -14,6 +14,7 @@ const Navbar = () => {
             <Link to="/" activeClassName="nav-active">home</Link>
             {/* <Link to="/skills">skills</Link> */}
             <Link to="/projects" activeClassName="nav-active">projects</Link>
+            <a href="../../fahim_cv.pdf" target="_blank" class="resume-link">resume.pdf</a>
             {/* <Link to="#" onClick={darkMode.toggle}> { darkMode.value ? 'light mode' : 'dark mode' } </Link> */}
             </nav>
             <script>

@@ -1,6 +1,7 @@
 // Step 1: Import React
 import * as React from 'react'
 import { Link } from 'gatsby'
+import { Helmet } from "react-helmet"
 import 'bootstrap/dist/css/bootstrap.min.css'
 //import '@fontsource/inter'
 import "@fontsource/montserrat"
@@ -13,6 +14,11 @@ import NowPlaying from '../components/nowplaying'
 const IndexPage = () => {
   return (
     <main>
+      <Helmet>
+      <meta charSet="utf-8" />
+      <title>Fahim Faisal</title>
+      <link rel="canonical" href="https://fahim.tech" />
+      </Helmet>
       <Navbar/>
     <div className="container">
       <div>
@@ -20,6 +26,7 @@ const IndexPage = () => {
       I'm a software engineer from Dhaka, Bangladesh. I like building things with Python and Javascript, I like automating almost anything I can.
 My hobbies include space, making playlists and taking pictures. I also like comedy shows, I'm a big fan of SNL.
 Currently I'm looking for work and making cool <Link to="/projects" className="hover-underline-animation" style={{ textDecoration: "none" }}>projects</Link> on my own.
+<div className="new-line">Note: This site is still being built. You can visit my old site here: <a href="https://old.fahim.tech">https://old.fahim.tech</a></div>
   <NowPlaying/>
       </div>
       <div>
