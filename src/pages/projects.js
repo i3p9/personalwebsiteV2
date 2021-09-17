@@ -41,6 +41,16 @@ const ProjectPage = () => {
           <div class="col">
             <div class="card proj-body">
               <div class="card-body">
+                <h5 class="card-title proj-title">Text in a Bottle</h5>
+                <p class="card-text">Simple and fast webapp made in Python to create and share text or code snippets. Made using Flask, data hosted in FaunaDB. Click demo to use the site.</p>
+                <a href="https://github.com/i3p9/lyricatch" target="_blank" rel="noreferrer" class="button-git git">github</a> <a href="https://textinabottle.herokuapp.com/" target="_blank" rel="noreferrer" class="button-demo demo">demo</a>
+                <p class="card-text card-techused"><span class="techused-font">Python</span></p><span class="techused-font">Flask</span><span class="techused-font">FaunaDB</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card proj-body">
+              <div class="card-body">
                 <h5 class="card-title proj-title">Jumpstart</h5>
                 <p class="card-text">Webapp for installing/updating multiple macOS Applications at once, amazingly faster compared to installing applications one-by-one.</p>
                 <a href="https://github.com/i3p9/Jumpstart" target="_blank" rel="noreferrer" class="button-git git">github</a> <a href="https://jumpstart-mac.vercel.app/" target="_blank" rel="noreferrer" class="button-demo demo">demo</a>
