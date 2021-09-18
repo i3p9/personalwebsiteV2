@@ -29,6 +29,14 @@ const ArchivePage = () => {
                     <tbody>
                     <tr>
                         <th scope="row">2021</th>
+                        <td>Text in a Bottle</td>
+                        <td class="d-none d-md-table-cell"><span class="techused-font">React</span><span class="techused-font">GatsbyJS</span></td>
+                        <td><a href="https://github.com/i3p9/txt-in-a-bottle"><FontAwesomeIcon icon={ faGithub } /></a>&nbsp;&nbsp;<a href="https://txtinabottle.herokuapp.com"><FontAwesomeIcon icon={ faExternalLinkAlt }/></a></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                    <tr>
+                        <th scope="row">2021</th>
                         <td>Personal Website V2</td>
                         <td class="d-none d-md-table-cell"><span class="techused-font">React</span><span class="techused-font">GatsbyJS</span></td>
                         <td><a href="https://github.com/i3p9/personalwebsitev2"><FontAwesomeIcon icon={ faGithub } /></a>&nbsp;&nbsp;<a href="https://github.com/i3p9/personalwebsitev2"><FontAwesomeIcon icon={ faExternalLinkAlt }/></a></td>
