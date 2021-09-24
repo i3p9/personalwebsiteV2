@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSpotify } from '@fortawesome/free-brands-svg-icons'
+import { config } from "@fortawesome/fontawesome-svg-core"
+config.autoAddCss = false
 
 const NowPlaying = () => {
     const [track, settrack] = useState("");
