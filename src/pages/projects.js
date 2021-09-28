@@ -42,7 +42,7 @@ const ProjectPage = () => {
             <div class="card proj-body">
               <div class="card-body">
                 <h5 class="card-title proj-title">Text in a Bottle</h5>
-                <p class="card-text">Simple and fast webapp made in Python to create and share text or code snippets. Made using Flask, data hosted in FaunaDB. Click demo to use the site.</p>
+                <p class="card-text">Simple and fast webapp made in Python to create and share text or code snippets. Also supports creating super fast and light web page to share via Markdown. Made using Flask, data hosted in FaunaDB. Click demo to use the site.</p>
                 <a href="https://github.com/i3p9/txt-in-a-bottle" target="_blank" rel="noreferrer" class="button-git git">github</a> <a href="https://txtinabottle.herokuapp.com/" target="_blank" rel="noreferrer" class="button-demo demo">demo</a>
                 <p class="card-text card-techused"><span class="techused-font">Python</span><span class="techused-font">Flask</span><span class="techused-font">FaunaDB</span></p>
               </div>
@@ -63,7 +63,7 @@ const ProjectPage = () => {
               <div class="card-body">
                 <h5 class="card-title proj-title">Personalwebsite V1</h5>
                 <p class="card-text">V1 of my personal website made using Jekyll, Ruby. Still accessible via demo!</p>
-                <a href="https://github.com/i3p9/personalwebsite" target="_blank" rel="noreferrer" class="button-git git">github</a> <a href="https://google.com" target="_blank" rel="noreferrer" class="button-demo demo">demo</a>
+                <a href="https://github.com/i3p9/personalwebsite" target="_blank" rel="noreferrer" class="button-git git">github</a> <a href="https://old.fahim.tech" target="_blank" rel="noreferrer" class="button-demo demo">demo</a>
                 <p class="card-text card-techused"><span class="techused-font">Ruby</span><span class="techused-font">Jekyll</span></p>
               </div>
             </div>
