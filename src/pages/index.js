@@ -17,7 +17,19 @@ const IndexPage = () => {
       <Helmet>
       <meta charSet="utf-8" />
       <title>Fahim Faisal</title>
-      <link rel="canonical" href="https://fahim.tech" />
+      <link rel="canonical" href="https://fahim.tech"/>
+      <meta property="og:site_name" content="Website of Fahim Faisal" />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="Fahim Faisal" />
+      <meta property="og:url" content="https://fahim.tech/ogimage.webp" />
+      <meta property="og:description" content="Personal website of Fahim Faisal" />
+      <meta property="og:image" content="/ogimage.webp" />
+      <meta name="twitter:card" content="summary_large_image"/>
+      <meta property="twitter:domain" content="https://fahim.tech"/>
+      <meta property="twitter:url" content="https://fahim.tech"/>
+      <meta name="twitter:title" content="Fahim Faisal"/>
+      <meta name="twitter:description" content="Personal website of Fahim Faisal"/>
+      <meta name="twitter:image" content="https://fahim.tech/ogimage.webp"/>
       </Helmet>
       <Navbar/>
     <div className="container">
