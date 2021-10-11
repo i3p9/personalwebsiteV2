@@ -1,4 +1,3 @@
-// Step 1: Import React
 import * as React from 'react'
 import { Link } from 'gatsby'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -23,7 +22,7 @@ const ProjectPage = () => {
               <div class="card-body">
                 <h5 class="card-title proj-title">mac-setup</h5>
                 <p class="card-text">Guide to setup a fresh macOS installation automatically, saving time and effort. Includes 3rd-party apps, ssh and gpg setups</p>
-                <a href="https://github.com/i3p9/mac-setup" target="_blank" rel="noreferrer" class="button-git git hover-underline-animation">github</a> <a href="https://mac-setup.vercel.app/#/" target="_blank" rel="noreferrer" class="button-demo demo">demo</a>
+                <a href="https://github.com/i3p9/mac-setup" target="_blank" rel="noreferrer" class="button-git git hover-underline-animation">github</a> <a href="https://mac-setup.vercel.app/#/" target="_blank" rel="noreferrer" class="button-demo-beta demo">demo</a>
                 <p class="card-text card-techused"><span class="techused-font">MD</span><span class="techused-font">Docify JS</span></p>
               </div>
             </div>
@@ -42,7 +41,7 @@ const ProjectPage = () => {
             <div class="card proj-body">
               <div class="card-body">
                 <h5 class="card-title proj-title">Text in a Bottle</h5>
-                <p class="card-text">Simple and fast webapp made in Python to create and share text or code snippets. Also supports creating super fast and light web page to share via Markdown. Made using Flask, data hosted in FaunaDB. Click demo to use the site.</p>
+                <p class="card-text">Simple and fast webapp made in Python to create and share text or code snippets. Has live Markdown editing and publishing,  supports creating super fast and light web page to share via Markdown. Made using Flask and MongoDB. Click demo to use the site.</p>
                 <a href="https://github.com/i3p9/txt-in-a-bottle" target="_blank" rel="noreferrer" class="button-git git">github</a> <a href="https://txtinabottle.herokuapp.com/" target="_blank" rel="noreferrer" class="button-demo demo">demo</a>
                 <p class="card-text card-techused"><span class="techused-font">Python</span><span class="techused-font">Flask</span><span class="techused-font">FaunaDB</span></p>
               </div>
@@ -103,7 +102,7 @@ const ProjectPage = () => {
               <div class="card-body">
                 <h5 class="card-title proj-title">shell-scripts</h5>
                 <p class="card-text">Big collection of shell scripts including automating complete computer setup, system services and apps. Also includes a number of script to automate uploading, downloading and backing up computer. </p>
-                <a href="https://github.com/i3p9/shell-scripts" target="_blank" rel="noreferrer" class="button-git git">github</a> <a href="https://github.com/i3p9/shell-scripts" target="_blank" rel="noreferrer" class="button-demo demo">github</a>
+                <a href="https://github.com/i3p9/shell-scripts" target="_blank" rel="noreferrer" class="button-git git">github</a>
                 <p class="card-text card-techused"><span class="techused-font">Bash</span><span class="techused-font">Shell</span></p>
               </div>
             </div>
@@ -123,5 +122,4 @@ const ProjectPage = () => {
     </main>
   )
 }
-// Step 3: Export your component
 export default ProjectPage

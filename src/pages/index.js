@@ -1,4 +1,3 @@
-// Step 1: Import React
 import * as React from 'react'
 import { Link } from 'gatsby'
 import { Helmet } from "react-helmet"
@@ -10,7 +9,9 @@ import "@fontsource/yanone-kaffeesatz"
 import '../scss/index.scss'
 import Navbar from '../components/navbar'
 import NowPlaying from '../components/nowplaying'
-// Step 2: Define your component
+
+// TODO: Contact Info, email?
+
 const IndexPage = () => {
   return (
     <main>
@@ -47,5 +48,4 @@ Currently I'm looking for work and making cool <Link to="/projects" className="h
     </main>
   )
 }
-// Step 3: Export your component
 export default IndexPage

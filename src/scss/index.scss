@@ -110,7 +110,7 @@ a {
     color: var(--bg);
     border: 2px solid var(--theme-color);
     font-family: 'Jetbrains Mono', monospace;
-    font-weight: 100;
+    font-weight: 200;
     text-align: justify;
     text-decoration: none;
     display: inline-block;
@@ -135,7 +135,27 @@ a {
     border-radius: 2px;
     padding: 5px 5px;
     margin: 4px 4px;
+    box-shadow: 3px 3px 0 black;
 }
+
+.button-demo-beta {
+    background-color: var(--bg);
+    color: var(--theme-color);
+    border: 2px solid var(--theme-color);
+    font-family: 'Jetbrains Mono', monospace;
+    font-weight: 200;
+    text-align: justify;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 5px 5px;
+    margin: 4px 4px;
+    box-shadow: 3px 3px 0 black;
+
+}
+
 
 a.git:hover{
     color: var(--bg);
