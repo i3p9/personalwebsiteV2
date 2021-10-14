@@ -43,7 +43,7 @@ const ProjectPage = () => {
                 <h5 class="card-title proj-title">Text in a Bottle</h5>
                 <p class="card-text">Simple and fast webapp made in Python to create and share text or code snippets. Has live Markdown editing and publishing,  supports creating super fast and light web page to share via Markdown. Made using Flask and MongoDB. Click demo to use the site.</p>
                 <a href="https://github.com/i3p9/txt-in-a-bottle" target="_blank" rel="noreferrer" class="button-git git">github</a> <a href="https://txtinabottle.herokuapp.com/" target="_blank" rel="noreferrer" class="button-demo demo">demo</a>
-                <p class="card-text card-techused"><span class="techused-font">Python</span><span class="techused-font">Flask</span><span class="techused-font">FaunaDB</span></p>
+                <p class="card-text card-techused"><span class="techused-font">Python</span><span class="techused-font">Flask</span><span class="techused-font">MongoDB</span></p>
               </div>
             </div>
           </div>
