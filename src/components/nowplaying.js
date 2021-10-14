@@ -24,7 +24,7 @@ const NowPlaying = () => {
     },[])
     console.log(track)
     return(
-        <a href="https://www.last.fm/user/xfahim" class="now-playing-link" target="_blank">
+        <a href="https://www.last.fm/user/xfahim" class="now-playing-link" target="_blank" rel="noreferrer">
         <div className="now-playing"><FontAwesomeIcon icon={ faSpotify } /> <span>Last Played: </span> { track } by { artist }</div>
         </a>
     )
