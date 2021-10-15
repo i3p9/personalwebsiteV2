@@ -60,6 +60,16 @@ const ProjectPage = () => {
           <div class="col">
             <div class="card proj-body">
               <div class="card-body">
+                <h5 class="card-title proj-title">Deepfake Detection using Xception</h5>
+                <p class="card-text">Detecting deepfakes specially found in Social Media and usually low-res using custom Xception Deep Learning</p>
+                <a href="https://github.com/i3p9/deepfake-detection-with-xception" target="_blank" rel="noreferrer" class="button-git git">github</a>
+                <p class="card-text card-techused"><span class="techused-font">Python</span><span class="techused-font">ML</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card proj-body">
+              <div class="card-body">
                 <h5 class="card-title proj-title">Personalwebsite V1</h5>
                 <p class="card-text">V1 of my personal website made using Jekyll, Ruby. Still accessible via demo!</p>
                 <a href="https://github.com/i3p9/personalwebsite" target="_blank" rel="noreferrer" class="button-git git">github</a> <a href="https://old.fahim.tech" target="_blank" rel="noreferrer" class="button-demo demo">demo</a>
