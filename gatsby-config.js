@@ -7,6 +7,7 @@ module.exports = {
     "gatsby-plugin-offline",
     "gatsby-plugin-use-dark-mode",
     "gatsby-plugin-react-helmet",
+    "gatsby-transformer-remark",
     "gatsby-plugin-sass",
     {
       resolve: "gatsby-plugin-manifest",
@@ -29,6 +30,13 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "markdown-pages",
+        path: "./src/markdown-pages/"
+      },
     },
   ],
 };

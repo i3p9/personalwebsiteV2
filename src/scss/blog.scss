@@ -1,0 +1,44 @@
+.post-list-title{
+    font-family: "Untitled Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--text-bold);
+    text-decoration: none;
+}
+
+.post-list-body {
+    border: 2px solid var(--theme-color);
+    border-radius: 0px;
+    background-color: var(--bg);
+    top: 0;
+    position: relative;
+    transition: top ease 0.3s;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.post-list-body:hover{
+    top: -5px;
+}
+
+.post-list-summary {
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 1rem;
+}
+
+
+// Blog Itself
+
+.blog-title {
+    font-family: "Untitled Sans", sans-serif;
+    font-weight: 700;
+    color: var(--text-bold);
+}
+
+.blog-date {
+    color: var(--bg);
+    background-color: var(--theme-color);
+    padding-left: 2px;
+    padding-right: 2px;
+}
