@@ -8,4 +8,3 @@ summary: "A short tutorial on creating a blog and link it with your existing Gat
 Does anyone know?
 
 *panics*
-
