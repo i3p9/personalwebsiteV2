@@ -5,7 +5,6 @@ import 'react-bootstrap'
 import Navbar from '../components/navbar'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLaptopCode, faCompactDisc, faBook, faTv, faVideo, faPencilAlt } from '@fortawesome/free-solid-svg-icons'
-// import { faGithub, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 import '../scss/index.scss'
 
 const FunPage = () => {

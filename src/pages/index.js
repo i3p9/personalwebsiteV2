@@ -2,10 +2,6 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 import { Helmet } from "react-helmet"
 import 'bootstrap/dist/css/bootstrap.min.css'
-//import '@fontsource/inter'
-import "@fontsource/montserrat"
-import "@fontsource/open-sans"
-import "@fontsource/yanone-kaffeesatz"
 import '../scss/index.scss'
 import Navbar from '../components/navbar'
 import NowPlaying from '../components/nowplaying'

@@ -1,9 +1,6 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
 import 'bootstrap/dist/css/bootstrap.min.css'
-//import '@fontsource/inter'
-import "@fontsource/montserrat"
-import "@fontsource/yanone-kaffeesatz"
 import '../scss/index.scss'
 import Navbar from '../components/navbar'
 
