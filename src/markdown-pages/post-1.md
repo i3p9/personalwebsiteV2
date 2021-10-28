@@ -21,7 +21,7 @@ Since you're already here, let me share a *cool* thing.
 
 Anyone using terminal (I hope iTerm2) knows what's a pain in the butt zsh plugins are. You've probably seen some really good prompts but setting them up, managing plugins and getting them to work on multiple machines is a hassle and oh god, the speed, oh my zsh is *so slow*, so check out [zsh4humans](https://github.com/romkatv/zsh4humans), made by the same person who made Powerlevel10k, it's like everything a regular developer would need without all the bloat.
 
-[Insert Image Here]
+<img src="../../blogassets/post-1_1.png" alt="Postman Screenshot of POST Request" class="container" style="zoom:100%;margin-top:40px;margin-bottom:40px;" />
 
 It comes with Powerlevel10k already, has autocomplete support, syntax `highlighting`, command completions (so great!) and searchable history. The entire config teleports automatically to connections over ssh. And most importantly, it's *very fast*. It also has the fancy git prompts where you can see which branch/commit are you working on, file status and a lot.
 
