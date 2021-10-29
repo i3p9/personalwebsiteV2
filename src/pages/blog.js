@@ -23,7 +23,7 @@ const IndexPage = ({
           <div className="container">
               <div>
                   <h1 className="home-name">Blog</h1>
-                  An experimental blog to write mostly about tech, or my hobbies if I ever get to have anything that's worth writing
+                  An experimental blog to write mostly about tech, or my hobbies if I ever get to have anything that's worth writing.
               </div>
               <div>
                   {Posts}

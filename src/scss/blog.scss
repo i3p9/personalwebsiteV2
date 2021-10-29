@@ -15,6 +15,13 @@
     transition: top ease 0.3s;
     margin-top: 15px;
     margin-bottom: 8px;
+    box-shadow:
+    4.2px 3.7px 2.7px rgba(0,0,0, 0.011),
+    8.6px 7.6px 6.9px rgba(0,0,0, 0.021),
+    13.9px 12.3px 14.2px rgba(0,0,0, 0.031),
+    23px 20.4px 29.2px rgba(0,0,0, 0.011),
+    52px 46px 80px rgba(0,0,0, 0.06);
+
 }
 
 .post-list-body:hover{
@@ -64,5 +71,10 @@
     background-color: var(--notice-bg);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: var(--notice-bg, rgba(0, 0, 0, 0.55) 0 8px 16px);
+    box-shadow:
+    3.3px 3px 2.2px rgba(0, 0, 0, 0.021),
+    7px 6.4px 6px rgba(0, 0, 0, 0.03),
+    12.7px 11.6px 14.5px rgba(0, 0, 0, 0.039),
+    33px 30px 48px rgba(0, 0, 0, 0.06);
+
 }

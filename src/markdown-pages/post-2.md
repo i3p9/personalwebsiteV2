@@ -13,6 +13,6 @@ Does anyone know?
 
 ```bash
 echo Hello World
-cd poop
+cd gittu
 mkdir hello
 ```

@@ -41,8 +41,8 @@ Currently I'm prepping for Master's and making cool <Link to="/projects" classNa
 {/* <div className="new-line">Note: This site is still being built. You can visit my old site here: <a href="https://old.fahim.tech">https://old.fahim.tech</a></div> */}
   <NowPlaying/>
       </div>
-      <div style={{marginTop: 10 + 'px', marginBottom: 50 + 'px'}}>
-        <br/><a href="https://github.com/i3p9/" class="home-links" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={ faAt } /> fahimpfaisal@gmail.com</a>
+      <div style={{marginTop: 15 + 'px', marginBottom: 50 + 'px'}}>
+        <a href="https://github.com/i3p9/" class="home-links" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={ faAt } /> fahimpfaisal@gmail.com</a>
         <br/><a href="https://github.com/i3p9/" class="home-links" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={ faGithub } /> github</a>
         <br/><a href="https://twitter.com/fahplusim" class="home-links" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={ faTwitter } /> twitter</a>
         <br/><a href="https://www.last.fm/user/xfahim" class="home-links" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={ faLastfm } /> last.fm</a>

@@ -254,13 +254,21 @@ a.demo:hover{
     background-color: var(--bg);
     top: 0;
     position: relative;
-    transition: top ease 0.3s;
-    margin-top: 2px;
-    margin-bottom: 8px;
+    //transition: top ease 0.3s;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.5s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.5s;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-shadow:
+    4.2px 3.7px 2.7px rgba(0,0,0, 0.011),
+    8.6px 7.6px 6.9px rgba(0,0,0, 0.021),
+    13.9px 12.3px 14.2px rgba(0,0,0, 0.031),
+    23px 20.4px 29.2px rgba(0,0,0, 0.011),
+    52px 46px 80px rgba(0,0,0, 0.06);
 }
 
 .proj-body:hover{
     top: -5px;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.5s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.5s;
 }
 
 .proj-image {

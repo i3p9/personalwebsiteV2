@@ -27,23 +27,23 @@ After the success, I went ahead did a couple more tests, with varying album visi
 
 ## Request
 
-Now it's what you've been waiting for. The actual `POST` request that you will need for uploading image. Get the album ID from the website link itself, `https://ibb.co/album/<ALBUM_ID>` and the api key from [here](https://api.imgbb.com/)
+Here it is, the actual `POST` request that you will need for uploading image. Get the album ID from the website link itself, `https://ibb.co/album/<ALBUM_ID>` and the api key from [here](https://api.imgbb.com/).
 
-* Request Type:`POST`-> `https://ibb.co/json`
-* Headers:
-  * `Accept`: `application/json`
-  * `Content-Type`: `multipart/form-data;`
-* Body:
-  * `action`: `upload`
-  * `album_id`: `YOUR_ALBUM_ID`
-  * `auth_token`: `YOUR_API_KEY`
-  * `source`: `IMAGE_FILE` (type: `file`)
-  * `type`: `file`
+```bash
+curl --location --request POST 'https://ibb.co/json' \
+--header 'Accept: application/json' \
+--header 'Content-Type: multipart/form-data' \
+--form 'action="upload"' \
+--form 'album_id="<ALBUM_ID>"' \
+--form 'auth_token="<YOUR_API_KEY>"' \
+--form 'source=@"/path/to/image.ext"' \
+--form 'type="file"'
+```
 
-If everything goes right, you will get a `200` status code, and in the response, you can filter out direct link to the image via `image.url` key, which then you can share with others without revealing other images on the album.
+If everything goes right, you will get a json response with `200` status code, and in the response, you can filter out direct link to the image via `image.url` key, which then you can share with others without revealing other images on the album.
 
 ## Implementation
 
-For Imgbb uploads, I currently have [Imgbb.sh](https://github.com/i3p9/Imgbb.sh) on github which works as a command-line tool to upload images,
+For Imgbb uploads, I currently have [Imgbb.sh](https://github.com/i3p9/Imgbb.sh) on github which works as a command-line tool to upload images, will eventually implement uploading to album support.
 
 I also have a Shortcuts on iOS (And now on macOS too, Monterey) to deal with uploading them. I have implemented my new method on the Shortcut already, which you can grab from [here](https://www.icloud.com/shortcuts/0d75372f52ab4fd198025ff4361b42dd), supports iOS/iPadOS 14 or above, and macOS Monetery 12 or above. On first run, it has a easy setup to input API key and Album ID.
