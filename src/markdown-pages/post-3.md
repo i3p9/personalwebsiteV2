@@ -9,8 +9,7 @@ Uploading and sharing images temporarily is a big part of my workflow, and I mak
 
 As for Imgbb, they have a simple api that lets users upload images, but only caveat is that their api only supports uploading images to your public profile. It unfortunately does not support uploading images to public/private album which is my preferred option. You still get to share the individual image to certain people, but *not* share all your uploaded images. So I thought I would dig more into their web interface and see if I can find a way to upload images to a specific album.
 
-TLDR: I did find a way. scroll [here](#request) to skip the process of finding it out and see how.
-
+<p class="blog-notice-yellow">TLDR: I did find a way. scroll <a href=#request>here</a> to skip the process of figuring it out and see how to do it yourself.</p>
 
 First of all, I opened up their website to upload an image to a private album, and fired up Postman's Interceptor. Then I uploaded an image to the album normally. Let's open up Postman and see what's going to under the bonnet.
 

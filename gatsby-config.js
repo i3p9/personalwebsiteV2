@@ -14,6 +14,13 @@ module.exports = {
         plugins: [
           "gatsby-remark-reading-time",
           "gatsby-remark-autolink-headers",
+          {
+            resolve: "gatsby-remark-highlight-code",
+            options: {
+              terminal: "carbon",
+              theme: "seti",
+            },
+          },
         ],
       },
     },

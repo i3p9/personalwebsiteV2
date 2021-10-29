@@ -4,6 +4,8 @@ import PostLink from "../components/post-link"
 import Navbar from "../components/navbar"
 import '../scss/index.scss'
 import '../scss/blog.scss'
+import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
+deckDeckGoHighlightElement();
 
 
 const IndexPage = ({

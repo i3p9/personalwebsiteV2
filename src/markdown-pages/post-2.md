@@ -7,4 +7,12 @@ summary: "A short tutorial on creating a blog and link it with your existing Gat
 
 Does anyone know?
 
+<p class="blog-notice-yellow">Notice: Can you see me?</p>
+
 *panics*
+
+```bash
+echo Hello World
+cd poop
+mkdir hello
+```
