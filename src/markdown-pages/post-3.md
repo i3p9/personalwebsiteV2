@@ -9,7 +9,7 @@ Uploading and sharing images temporarily is a big part of my workflow, and I mak
 
 As for Imgbb, they have a simple api that lets users upload images, but only caveat is that their api only supports uploading images to your public profile. It unfortunately does not support uploading images to public/private album which is my preferred option. You still get to share the individual image to certain people, but *not* share all your uploaded images. So I thought I would dig more into their web interface and see if I can find a way to upload images to a specific album.
 
-TLDR: I did find a way. scroll [here](#Request) to skip the process of finding it out and see how.
+TLDR: I did find a way. scroll [here](#request) to skip the process of finding it out and see how.
 
 
 First of all, I opened up their website to upload an image to a private album, and fired up Postman's Interceptor. Then I uploaded an image to the album normally. Let's open up Postman and see what's going to under the bonnet.
@@ -26,7 +26,7 @@ Is that `status_code: 200` I see? Success! I stripped out most of the Headers, o
 
 After the success, I went ahead did a couple more tests, with varying album visibility, multiple file uploads etc. Well, multiple uploads with one request can not be done, even they themselves use separate `POST` requests when uploading multiple images, so all good in this case.
 
-### Request
+## Request
 
 Now it's what you've been waiting for. The actual `POST` request that you will need for uploading image. Get the album ID from the website link itself, `https://ibb.co/album/<ALBUM_ID>` and the api key from [here](https://api.imgbb.com/)
 
@@ -43,7 +43,7 @@ Now it's what you've been waiting for. The actual `POST` request that you will n
 
 If everything goes right, you will get a `200` status code, and in the response, you can filter out direct link to the image via `image.url` key, which then you can share with others without revealing other images on the album.
 
-### Implementation
+## Implementation
 
 For Imgbb uploads, I currently have [Imgbb.sh](https://github.com/i3p9/Imgbb.sh) on github which works as a command-line tool to upload images,
 

@@ -46,6 +46,11 @@ export const pageQuery = graphql`
             title
             summary
           }
+          fields {
+            readingTime {
+              text
+            }
+          }
         }
       }
     }

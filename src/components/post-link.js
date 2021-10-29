@@ -11,6 +11,7 @@ const PostLink = ({ post }) => (
       {post.frontmatter.title}
     </h5>
     <p class="post-list-summary">{post.frontmatter.summary}</p>
+    <p class="post-list-readingtime">{post.fields.readingTime.text}</p>
     </div>
   </div>
   </Link>

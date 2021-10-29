@@ -24,7 +24,13 @@
 .post-list-summary {
     margin-left: 0px;
     margin-right: 0px;
-    font-size: 1rem;
+    font-size: 1.1rem;
+}
+
+.post-list-readingtime {
+    text-align: end;
+    font-size: .9rem;
+    font-style: italic;
 }
 
 
@@ -41,4 +47,11 @@
     background-color: var(--theme-color);
     padding-left: 2px;
     padding-right: 2px;
+}
+
+.reading-time-blog {
+    color: var(--text-faded);
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1rem;
 }

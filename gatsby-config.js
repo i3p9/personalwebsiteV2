@@ -8,6 +8,15 @@ module.exports = {
     "gatsby-plugin-use-dark-mode",
     "gatsby-plugin-react-helmet",
     "gatsby-transformer-remark",
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          "gatsby-remark-reading-time",
+          "gatsby-remark-autolink-headers",
+        ],
+      },
+    },
     "gatsby-plugin-sass",
     {
       resolve: "gatsby-plugin-manifest",
@@ -22,7 +31,6 @@ module.exports = {
         theme_color_in_head: false,
       },
     },
-    "gatsby-transformer-remark",
     {
       resolve: "gatsby-source-filesystem",
       options: {

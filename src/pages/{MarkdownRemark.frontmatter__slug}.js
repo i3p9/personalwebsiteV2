@@ -9,7 +9,7 @@ export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
-  const { frontmatter, html } = markdownRemark
+  const { frontmatter, html, fields } = markdownRemark
   return (
     <main>
       <Navbar/>
@@ -18,6 +18,7 @@ export default function Template({
       <div className="blog-post">
         <h1 className="blog-title">{frontmatter.title}</h1>
         <p ><span className="blog-date">{frontmatter.date}</span></p>
+        <p ><span className="post-list-readingtime">{fields.readingTime.text}</span></p>
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
@@ -38,6 +39,11 @@ export const pageQuery = graphql`
         slug
         title
         summary
+      }
+      fields {
+        readingTime {
+          text
+        }
       }
     }
   }
