@@ -4,6 +4,7 @@
         url('../fonts/untitled-sans-web/UntitledSans-LightItalic.woff') format('woff');
     font-weight: 300;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -12,6 +13,7 @@
         url('../fonts/untitled-sans-web/UntitledSans-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -20,6 +22,7 @@
         url('../fonts/untitled-sans-web/UntitledSans-MediumItalic.woff') format('woff');
     font-weight: 500;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -28,6 +31,7 @@
         url('../fonts/untitled-sans-web/UntitledSans-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -36,6 +40,7 @@
         url('../fonts/untitled-sans-web/UntitledSans-RegularItalic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -44,6 +49,7 @@
         url('../fonts/untitled-sans-web/UntitledSans-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -52,6 +58,7 @@
         url('../fonts/untitled-sans-web/UntitledSans-BoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -60,6 +67,7 @@
         url('../fonts/untitled-sans-web/UntitledSans-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -68,4 +76,5 @@
         url('../fonts/untitled-sans-web/UntitledSans-BlackItalic.woff') format('woff');
     font-weight: 900;
     font-style: italic;
+    font-display: swap;
 }
