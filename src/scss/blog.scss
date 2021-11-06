@@ -1,3 +1,8 @@
+body {
+--line-yellow: url("data:image/svg+xml;charset=utf-8,%3Csvg preserveAspectRatio='none' width='120' height='6' viewBox='0 0 120 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M119 0.8C60 4 50-0.5 1 1.5' stroke='%23fc0' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+--line-dark: url("data:image/svg+xml;charset=utf-8,%3Csvg preserveAspectRatio='none' width='120' height='6' viewBox='0 0 120 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M119 0.8C60 4 50-0.5 1 1.5' stroke='hsl(192, 17%, 35%)' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+
 .post-list-title{
     font-family: "Untitled Sans", sans-serif;
     font-weight: 700;
@@ -29,6 +34,7 @@
 }
 
 .post-list-summary {
+    color: var(--text-normal);
     margin-left: 0px;
     margin-right: 0px;
     font-size: 1.1rem;
@@ -86,3 +92,47 @@
     33px 30px 48px rgba(0, 0, 0, 0.06);
 
 }
+
+
+// Text Effects
+
+span.highlight {
+    padding: 0.6em 13.7px;
+    line-height: 1.8em;
+    //font-weight: bolder;
+    background: linear-gradient(104deg, rgba(130, 255, 173,0) 0.9%, rgba(130, 255, 173,1.25) 2.4%, rgba(130, 255, 173,0.5) 5.8%, rgba(130, 255, 173,0.1) 93%, rgba(130, 255, 173,0.7) 96%, rgba(130, 255, 1732,0) 98%), linear-gradient(183deg, rgba(130, 255, 173,0) 0%, rgba(130, 255, 173,0.3) 7.9%, rgba(130, 255, 173,0) 15%);
+    padding: 0.6em 13.7px;
+    -webkit-box-decoration-break: clone;
+    margin: 0;
+    border-radius: 7.5px;
+    text-shadow: -12px 12px 9.8px rgba(130, 255, 173,0.7), 21px -18.1px 7.3px rgba(255, 255, 255,1), -18.1px -27.3px 30px rgba(255, 255, 255,1);
+}
+
+
+span.mark {
+    margin: 0 -0.4em;
+    padding: 0.1em 0.4em;
+    border-radius: 0.8em 0.3em;
+    background: transparent;
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 225, 0, 0.1),
+      rgba(255, 225, 0, 0.7) 4%,
+      rgba(255, 225, 0, 0.3)
+    );
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+
+
+  // Link testing
+
+a.highlight {
+    color: var(--text-normal);
+    background-image: var(--line-dark);
+    background: var(--line-yellow) bottom left/100% .3em no-repeat;
+    text-decoration: none;
+    padding-bottom: 0.2em;
+}
+
+

@@ -9,7 +9,7 @@ Uploading and sharing images temporarily is a big part of my workflow, and I mak
 
 As for Imgbb, they have a simple api that lets users upload images, but only caveat is that their api only supports uploading images to your public profile. It unfortunately does not support uploading images to public/private album which is my preferred option. You still get to share the individual image to certain people, but *not* share all your uploaded images. So I thought I would dig more into their web interface and see if I can find a way to upload images to a specific album.
 
-<p class="blog-notice-yellow">TLDR: I did find a way. scroll <a href=#request>here</a> to skip the process of figuring it out and see how to do it yourself.</p>
+<p class="blog-notice-yellow">TLDR: I did find a way. scroll <a class="highlight" href=#request>here</a> to skip the process of figuring it out and see how to do it yourself.</p>
 
 First of all, I opened up their website to upload an image to a private album, and fired up Postman's Interceptor. Then I uploaded an image to the album normally. Let's open up Postman and see what's going to under the bonnet.
 
@@ -27,7 +27,7 @@ After the success, I went ahead did a couple more tests, with varying album visi
 
 ## Request
 
-Here it is, the actual `POST` request that you will need for uploading image. Get the album ID from the website link itself, `https://ibb.co/album/<ALBUM_ID>` and the api key from [here](https://api.imgbb.com/).
+Here it is, the actual `POST` request that you will need for uploading image. Get the album ID from the website link itself, `https://ibb.co/album/<ALBUM_ID>` and the api key from <a class="highlight" href="https://api.imgbb.com/)">here</a>.
 
 ```bash
 curl --location --request POST 'https://ibb.co/json' \
@@ -44,6 +44,6 @@ If everything goes right, you will get a json response with `200` status code, a
 
 ## Implementation
 
-For Imgbb uploads, I currently have [Imgbb.sh](https://github.com/i3p9/Imgbb.sh) on github which works as a command-line tool to upload images, will eventually implement uploading to album support.
+For Imgbb uploads, I currently have <a class="highlight" href="https://github.com/i3p9/Imgbb.sh">Imgbb.sh</a> on github which works as a command-line tool to upload images, will eventually implement uploading to album support.
 
-I also have a Shortcuts on iOS (And now on macOS too, Monterey) to deal with uploading them. I have implemented my new method on the Shortcut already, which you can grab from [here](https://www.icloud.com/shortcuts/0d75372f52ab4fd198025ff4361b42dd), supports iOS/iPadOS 14 or above, and macOS Monetery 12 or above. On first run, it has a easy setup to input API key and Album ID.
+I also have a Shortcuts on iOS (And now on macOS too, Monterey) to deal with uploading them. I have implemented my new method on the Shortcut already, <span class="mark">which you can grab</span> from <a class="highlight" href="https://www.icloud.com/shortcuts/0d75372f52ab4fd198025ff4361b42dd">here</a>, supports iOS/iPadOS 14 or above, and macOS Monetery 12 or above. On first run, it has a easy setup to input API key and Album ID.
