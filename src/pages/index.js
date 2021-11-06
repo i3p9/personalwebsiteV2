@@ -17,19 +17,19 @@ const IndexPage = () => {
       <Helmet>
       <meta charSet="utf-8" />
       <title>Fahim Faisal</title>
-      <link rel="canonical" href="https://fahim.tech"/>
+      <link rel="canonical" href="https://ffaisal.com"/>
       <meta property="og:site_name" content="Website of Fahim Faisal" />
       <meta property="og:type" content="website" />
       <meta property="og:title" content="Fahim Faisal" />
-      <meta property="og:url" content="https://fahim.tech/ogimage.webp" />
+      <meta property="og:url" content="https://ffaisal.com/ogimage.webp" />
       <meta property="og:description" content="Personal website of Fahim Faisal" />
       <meta property="og:image" content="/ogimage.webp" />
       <meta name="twitter:card" content="summary_large_image"/>
-      <meta property="twitter:domain" content="https://fahim.tech"/>
-      <meta property="twitter:url" content="https://fahim.tech"/>
+      <meta property="twitter:domain" content="https://ffaisal.com"/>
+      <meta property="twitter:url" content="https://ffaisal.com"/>
       <meta name="twitter:title" content="Fahim Faisal"/>
       <meta name="twitter:description" content="Personal website of Fahim Faisal"/>
-      <meta name="twitter:image" content="https://fahim.tech/ogimage.webp"/>
+      <meta name="twitter:image" content="https://ffaisal.com/ogimage.webp"/>
       </Helmet>
       <Navbar/>
     <div className="container">
@@ -42,7 +42,7 @@ Currently I'm prepping for Master's and making cool <Link to="/projects" classNa
   <NowPlaying/>
       </div>
       <div style={{marginTop: 15 + 'px', marginBottom: 50 + 'px'}}>
-        <a href="https://github.com/i3p9/" class="home-links" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={ faAt } /> fahimpfaisal@gmail.com</a>
+        <a href="mailto:fahimpfaisal@gmail.com" class="home-links" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={ faAt } /> fahimpfaisal@gmail.com</a>
         <br/><a href="https://github.com/i3p9/" class="home-links" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={ faGithub } /> github</a>
         <br/><a href="https://twitter.com/fahplusim" class="home-links" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={ faTwitter } /> twitter</a>
         <br/><a href="https://www.last.fm/user/xfahim" class="home-links" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={ faLastfm } /> last.fm</a>

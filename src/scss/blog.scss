@@ -35,11 +35,19 @@
 }
 
 .post-list-readingtime {
-    text-align: end;
+    float: right;
     font-size: .9rem;
     font-style: italic;
 }
 
+.post-list-date {
+    color: var(--bg);
+    background-color: var(--theme-color);
+    float: left;
+    font-size: .9rem;
+    padding-left: 3px;
+    padding-right: 3px;
+}
 
 // Blog Itself
 
