@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSpotify } from '@fortawesome/free-brands-svg-icons'
 import { config } from "@fortawesome/fontawesome-svg-core"
@@ -26,11 +27,12 @@ const NowPlaying = () => {
             }
         })
     },[])
-    console.log(track)
+    console.log(track);
     return(
-        <a href="https://www.last.fm/user/xfahim" class="now-playing-link" target="_blank" rel="noreferrer">
+        // <a href="https://www.last.fm/user/xfahim" class="now-playing-link" target="_blank" rel="noreferrer">
+        <Link href='/nowplaying' class='now-playing-link'>
         <div className="now-playing"><FontAwesomeIcon icon={ faSpotify } /> <span>{ playbackstatus } </span> { track } by { artist }</div>
-        </a>
+        </Link>
     )
 }
 
