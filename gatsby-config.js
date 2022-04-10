@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.fahim.tech",
+    siteUrl: "https://www.ffaisal.com",
     title: "Fahim Faisal",
   },
   plugins: [
@@ -31,7 +31,7 @@ module.exports = {
         name: "Fahim Faisal",
         short_name: "Fahim",
         start_url: "/",
-        icon: "src/images/icon.png",
+        icon: "src/images/icon.svg",
         background_color: "#FFFFFF",
         theme_color: "#FFFFFF",
         display: "standalone",
