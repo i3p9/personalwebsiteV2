@@ -6,6 +6,36 @@ import { faHistory, faCompactDisc, faHeart } from '@fortawesome/free-solid-svg-i
 import { Helmet } from "react-helmet"
 import { CSSTransition } from 'react-transition-group';
 
+function getRGB(c) {
+    return parseInt(c, 16) || c;
+}
+
+function getsRGB(c) {
+    return getRGB(c) / 255 <= 0.03928
+        ? getRGB(c) / 255 / 12.92
+        : Math.pow((getRGB(c) / 255 + 0.055) / 1.055, 2.4);
+}
+
+function getLuminance(hexColor) {
+    return (
+        0.2126 * getsRGB(hexColor.substr(1, 2)) +
+        0.7152 * getsRGB(hexColor.substr(3, 2)) +
+        0.0722 * getsRGB(hexColor.substr(-2))
+    );
+}
+
+function getContrast(f, b) {
+    const L1 = getLuminance(f);
+    const L2 = getLuminance(b);
+    return (Math.max(L1, L2) + 0.05) / (Math.min(L1, L2) + 0.05);
+}
+
+function getTextColor(bgColor) {
+    const whiteContrast = getContrast(bgColor, "#ffffff");
+    const blackContrast = getContrast(bgColor, "#000000");
+
+    return whiteContrast > blackContrast ? "#ffffff" : "#000000";
+}
 
 const NowPlayingPage = () => {
     // current date/time + acts as timer as well
@@ -78,6 +108,7 @@ const NowPlayingPage = () => {
     const [desc, setDesc] = useState("");
     //const [icon, setIcon] = useState("");
     useEffect(() => {
+        console.log(getTextColor("#C6C49F"));
         console.log('getting weather');
         const ow_api = atob("MWYxNGQ5NTNmNjc3MzEyYzAwYjdlZjI4OTcxYjUzNjQ=");
         const locid = atob("MTE4NTIwNA==");
@@ -97,6 +128,15 @@ const NowPlayingPage = () => {
         <main>
             <Helmet>
                 <title>Now Playing</title>
+                {/* https://stackoverflow.com/questions/62508815/how-would-you-style-the-body-of-multiple-pages-in-a-reactjs-app-without-having */}
+                <style>
+                    {`
+                            html,body {
+                                overflow: hidden;
+                            }
+                       `}
+                </style>
+
             </Helmet>
             <body className='body-class-nowplaying' style={{ backgroundImage: `url(${albumart})` }}>
                 <div class="bgblur">
