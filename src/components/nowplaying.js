@@ -27,6 +27,9 @@ const NowPlaying = () => {
                     setplaybackstatus("Last Played: ")
                 }
             })
+            .catch((error) => {
+                console.log(`error fetching nowplaying data ${error}`);
+            })
     }, [])
     //console.log(track);
     return (

@@ -4,7 +4,7 @@ import '../scss/nowplayingdash.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHistory, faCompactDisc, faHeart } from '@fortawesome/free-solid-svg-icons'
 import { Helmet } from "react-helmet"
-import { CSSTransition } from 'react-transition-group';
+import { CSSTransition } from 'react-transition-group'
 
 function getRGB(c) {
     return parseInt(c, 16) || c;
@@ -55,9 +55,9 @@ const NowPlayingPage = () => {
 
 
     //MUSIC
-    const [track, setTrack] = useState("");
-    const [artist, setArtist] = useState("");
-    const [album, setAlbum] = useState("");
+    const [track, setTrack] = useState("Loading...");
+    const [artist, setArtist] = useState("Loading...");
+    const [album, setAlbum] = useState("Loading...");
     const [albumart, setAlbumart] = useState("");
     const [playcount, setPlaycount] = useState(0);
     const [isloved, setIsloved] = useState(false);
@@ -82,6 +82,9 @@ const NowPlayingPage = () => {
                     setPlaybackstatus(false);
                 }
             })
+            .catch((error) => {
+                console.log(`error fetching nowplaying data ${error}`);
+            })
     }, [date]);
 
     //get track info (playbackcount, loved)
@@ -103,9 +106,20 @@ const NowPlayingPage = () => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [track])
 
+    //Song title semi-dynamic fontsize
+    const [titleFontSize, setTitleFontSize] = useState('3rem')
+    useEffect(() => {
+        if (track.length > 35) {
+            setTitleFontSize('1.5rem')
+            console.log(`track length big big ${track.length} `)
+        }
+        console.log(`${track.length}`)
+
+    }, [track])
+
     //get weather
-    const [temp, setTemp] = useState("");
-    const [desc, setDesc] = useState("");
+    const [temp, setTemp] = useState("0");
+    const [desc, setDesc] = useState("getting weather");
     //const [icon, setIcon] = useState("");
     useEffect(() => {
         console.log(getTextColor("#C6C49F"));
@@ -113,13 +127,17 @@ const NowPlayingPage = () => {
         const ow_api = atob("MWYxNGQ5NTNmNjc3MzEyYzAwYjdlZjI4OTcxYjUzNjQ=");
         const locid = atob("MTE4NTIwNA==");
         const units = "metric";
-        const getweather = "https://api.openweathermap.org/data/2.5/weather?id=" + locid + "&appid=" + ow_api + "&units=" + units
+        const getweather = `https://api.openweathermap.org/data/2.5/weather?id=${locid}&appid=${ow_api}&units=${units}`
+
         fetch(getweather)
             .then(res => res.json())
             .then(data => {
                 setTemp(data.main.feels_like);
                 setDesc(data.weather[0].description);
                 //setIcon(data.weather[0].icon);
+            })
+            .catch(error => {
+                console.error(`API Error: ${error}`)
             })
     }, []);
     //let iconLink = "http://openweathermap.org/img/w/" + icon + ".png";
@@ -145,16 +163,13 @@ const NowPlayingPage = () => {
                         <div><span class="weather glassbg">Feels like {temp}°, {desc}</span></div>
                     </div>
                     <div class='flexmain'>
-                        <div>
-                            <CSSTransition
-                                in={Boolean(albumart)}
-                                timeout={500}
-                                classNames="fade"
-                                unmountOnExit
-                            >
+                        <div className='albumart-container'>
+                            {albumart ? (
                                 <img class="albumart" src={albumart} alt='album art of currently playing song' />
-                            </CSSTransition>
-
+                            ) : (
+                                //maybe put a skeleton here!
+                                <img class="albumart" src={albumart} alt='album art of currently playing song' />
+                            )}
                         </div>
                         <div class="musicinfo">
                             <div class="playbackStatus"><span class='glassbg'>{playbackstatus ? (
@@ -166,7 +181,7 @@ const NowPlayingPage = () => {
                                     <FontAwesomeIcon icon={faHistory} /> Last Played
                                 </>
                             )}</span></div>
-                            <div class="trackname"><span class='glassbg'>{track}</span></div>
+                            <div class="trackname" style={{ fontSize: titleFontSize }}><span class='glassbg'>{track}</span></div>
                             <div class="artistname"><span class='glassbg'>{artist}</span></div>
                             <div class="albumname"><span class='glassbg'>{album}</span></div>
                             <div class="numberofplays">{playcount} plays</div>
