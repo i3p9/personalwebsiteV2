@@ -4,7 +4,6 @@ import '../scss/nowplayingdash.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHistory, faCompactDisc, faHeart } from '@fortawesome/free-solid-svg-icons'
 import { Helmet } from "react-helmet"
-import { CSSTransition } from 'react-transition-group'
 
 function getRGB(c) {
     return parseInt(c, 16) || c;
