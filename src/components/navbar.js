@@ -6,15 +6,15 @@ import useDarkMode from 'use-dark-mode'
 const Navbar = () => {
     const darkMode = useDarkMode(false);
 
-    return(
+    return (
         <div className="nav-flex" id="navbar">
             <div className="darkmode-text">
-            <Link to="#" style={{textDecoration: "none"}} onClick={darkMode.toggle}> { darkMode.value ? 'light' : 'dark' } </Link>
+                <Link to="#" style={{ textDecoration: "none" }} onClick={darkMode.toggle}> {darkMode.value ? 'light' : 'dark'} </Link>
             </div>
             <div className="nav-items">
                 <Link to="/" class="nav-item" activeClassName="nav-active">home</Link>
                 <Link to="/projects" class="nav-item" activeClassName="nav-active">projects</Link>
-                <Link to="/blog" class="nav-item" activeClassName="nav-active">blog</Link>
+                <Link to="/blog" class="nav-item" activeClassName="nav-active" partiallyActive>blog</Link>
                 <Link to="/fun" class="nav-item" activeClassName="nav-active">me</Link>
                 <a href="../../fahim_cv.pdf" class="nav-item">cv.pdf</a>
             </div>
