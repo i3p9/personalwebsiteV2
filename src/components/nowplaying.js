@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react'
 import { config } from "@fortawesome/fontawesome-svg-core"
-import PlayingAnimation from '../components/nowplayinganimation'
+import PlayingAnimation from './playinganimation'
 
 config.autoAddCss = false
 
