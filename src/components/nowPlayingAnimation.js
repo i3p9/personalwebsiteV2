@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSpotify } from '@fortawesome/free-brands-svg-icons'
-import '../scss/nowPlayingAnimation.scss';
+import '../scss/nowplayinganimationstyle.scss';
 
 const PlayingAnimation = ({ trackName, artistName, playBackStatus }) => {
 
