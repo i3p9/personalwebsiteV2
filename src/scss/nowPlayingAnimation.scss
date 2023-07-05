@@ -1,0 +1,66 @@
+@keyframes animation {
+  10% {
+    transform: scaleY(0.3);
+  }
+
+  30% {
+    transform: scaleY(1);
+  }
+
+  60% {
+    transform: scaleY(0.5);
+  }
+
+  80% {
+    transform: scaleY(0.75);
+  }
+
+  100% {
+    transform: scaleY(0.5);
+  }
+}
+
+.animation-container {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.text-container {
+  margin-left: 10px; /* Adjust the spacing between the animation and text */
+}
+
+.text {
+  color: var(--theme-color);
+  font-family: "Untitled Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  font-kerning: normal;
+}
+
+.playing {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 13px;
+  height: 13px;
+
+  span {
+    width: 3px;
+    height: 100%;
+    // background-color: #1ed760;
+    background-color: var(--text-normal);
+    border-radius: 3px;
+    animation: animation 2.2s ease infinite alternate;
+    content: "";
+    transform-origin: bottom;
+  }
+
+  span:nth-of-type(2) {
+    animation-delay: -2.2s;
+  }
+
+  span:nth-of-type(3) {
+    animation-delay: -3.7s;
+  }
+}

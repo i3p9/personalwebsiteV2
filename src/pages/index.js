@@ -41,7 +41,7 @@ const IndexPage = () => {
           {/* <div className="new-line">Note: This site is still being built. You can visit my old site here: <a href="https://old.fahim.tech">https://old.fahim.tech</a></div> */}
           <NowPlaying />
         </div>
-        <div style={{ marginTop: 15 + 'px', marginBottom: 50 + 'px' }}>
+        <div style={{ marginTop: 5 + 'px', marginBottom: 50 + 'px' }}>
           <a href="mailto:fahimpfaisal@gmail.com" class="home-links" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faAt} /> fahimpfaisal@gmail.com</a>
           <br /><a href="https://github.com/i3p9/" class="home-links" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /> i3p9</a>
           <br /><a href="https://twitter.com/fahplusim" class="home-links" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faTwitter} /> fahplusim</a>
