@@ -5,7 +5,7 @@
 }
 
 .goBackHomeItem {
-  color: var(--text-link);
+  color: black;
   margin-right: 20px;
   padding: 5px;
   text-decoration: none;
@@ -17,6 +17,10 @@
   border: 3px solid black;
   padding: 5px 5px 5px 5px;
   margin: 20px 20px 20px 20px;
+}
+
+.goBackHomeItem:hover {
+  color: black;
 }
 
 .backIconFa:hover {
@@ -33,4 +37,9 @@
 .goBackHomeItem:hover .backIconFa {
   transform: rotate(-0.5turn);
   content: "\f060";
+}
+
+//? on hover, unnecressary
+.questionSignOnHover::after {
+  content: "?";
 }
