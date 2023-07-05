@@ -156,22 +156,22 @@ const NowPlayingPage = () => {
 
             </Helmet>
             <body className='body-class-nowplaying' style={{ backgroundImage: `url(${albumart})` }}>
-                <div class="bgblur">
-                    <div class='flexhead'>
-                        <div><span class='datetime glassbg'>{date.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }) + " | " + date.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })}</span></div>
-                        <div><span class="weather glassbg">Feels like {temp}°, {desc}</span></div>
+                <div className="bgblur">
+                    <div className='flexhead'>
+                        <div><span className='datetime glassbg'>{date.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }) + " | " + date.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })}</span></div>
+                        <div><span className="weather glassbg">Feels like {temp}°, {desc}</span></div>
                     </div>
-                    <div class='flexmain'>
+                    <div className='flexmain'>
                         <div className='albumart-container'>
                             {albumart ? (
-                                <img class="albumart" src={albumart} alt='album art of currently playing song' />
+                                <img className="albumart" src={albumart} alt='album art of currently playing song' />
                             ) : (
                                 //maybe put a skeleton here!
-                                <img class="albumart" src={albumart} alt='album art of currently playing song' />
+                                <img className="albumart" src={albumart} alt='album art of currently playing song' />
                             )}
                         </div>
-                        <div class="musicinfo">
-                            <div class="playbackStatus"><span class='glassbg'>{playbackstatus ? (
+                        <div className="musicinfo">
+                            <div className="playbackStatus"><span className='glassbg'>{playbackstatus ? (
                                 <>
                                     <FontAwesomeIcon icon={faCompactDisc} spin /> Now Playing
                                 </>
@@ -180,11 +180,11 @@ const NowPlayingPage = () => {
                                     <FontAwesomeIcon icon={faHistory} /> Last Played
                                 </>
                             )}</span></div>
-                            <div class="trackname" style={{ fontSize: titleFontSize }}><span class='glassbg'>{track}</span></div>
-                            <div class="artistname"><span class='glassbg'>{artist}</span></div>
-                            <div class="albumname"><span class='glassbg'>{album}</span></div>
-                            <div class="numberofplays">{playcount} plays</div>
-                            <div class="heartIcon">{isloved ? (
+                            <div className="trackname" style={{ fontSize: titleFontSize }}><span className='glassbg'>{track}</span></div>
+                            <div className="artistname"><span className='glassbg'>{artist}</span></div>
+                            <div className="albumname"><span className='glassbg'>{album}</span></div>
+                            <div className="numberofplays">{playcount} plays</div>
+                            <div className="heartIcon">{isloved ? (
                                 <FontAwesomeIcon icon={faHeart} size={'md'} />
                             ) : ""}</div>
                         </div>
