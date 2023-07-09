@@ -13,7 +13,7 @@ import { faGithub, faTwitter, faLastfm } from '@fortawesome/free-brands-svg-icon
 
 const IndexPage = () => {
   return (
-    <main style={{ backgroundImage: `unset` }}>
+    <main>
       <Helmet>
         <meta charSet="utf-8" />
         <title>Fahim Faisal</title>
@@ -32,7 +32,7 @@ const IndexPage = () => {
         <meta name="twitter:image" content="https://ffaisal.com/ogimage.webp" />
       </Helmet>
       <Navbar />
-      <body style={{ backgroundImage: `unset` }}>
+      <body>
         <div className="container">
           <div>
             <h1 className="home-name">Hey, I'm Fahim Faisal</h1>

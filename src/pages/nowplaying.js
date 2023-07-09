@@ -4,8 +4,6 @@ import '../scss/nowplayingdash.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHistory, faCompactDisc, faHeart, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { Helmet } from "react-helmet"
-import { Link } from "gatsby";
-
 
 const NowPlayingPage = () => {
     // current date/time + acts as timer as well
@@ -160,7 +158,7 @@ const NowPlayingPage = () => {
                         </div>
                     </div>
                     <div className="backButtonContainerInMusic">
-                        <Link className="goBackHomeItemInMusic questionSignOnHover" to="/"><FontAwesomeIcon icon={faArrowLeft} size="1x" className="backIconFa" />go back</Link>
+                        <a href='https://ffaisal.com' className="goBackHomeItemInMusic questionSignOnHover"><FontAwesomeIcon icon={faArrowLeft} size="1x" className="backIconFa" />go back</a>
                     </div>
                 </div>
             </body>
