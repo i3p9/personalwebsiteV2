@@ -13,7 +13,7 @@ import { faGithub, faTwitter, faLastfm } from '@fortawesome/free-brands-svg-icon
 
 const IndexPage = () => {
   return (
-    <main>
+    <main style={{ backgroundImage: `unset` }}>
       <Helmet>
         <meta charSet="utf-8" />
         <title>Fahim Faisal</title>

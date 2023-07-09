@@ -160,7 +160,7 @@ const NowPlayingPage = () => {
                         </div>
                     </div>
                     <div className="backButtonContainerInMusic">
-                        <Link activeStyle={{ backgroundImage: "unset" }} className="goBackHomeItemInMusic questionSignOnHover" to="/"><FontAwesomeIcon icon={faArrowLeft} size="1x" className="backIconFa" />go back</Link>
+                        <Link activeStyle={{ backgroundImage: `unset` }} className="goBackHomeItemInMusic questionSignOnHover" to="/"><FontAwesomeIcon icon={faArrowLeft} size="1x" className="backIconFa" />go back</Link>
                     </div>
                 </div>
             </body>
