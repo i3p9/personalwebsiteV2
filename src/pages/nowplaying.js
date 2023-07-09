@@ -28,14 +28,14 @@ const NowPlayingPage = () => {
     const [track, setTrack] = useState("Loading...");
     const [artist, setArtist] = useState("Loading...");
     const [album, setAlbum] = useState("Loading...");
-    const [albumart, setAlbumart] = useState("");
+    const [albumart, setAlbumart] = useState("https://lastfm.freetls.fastly.net/i/u/600x600/8a89bf00eff0d1912f33164d3a15071f.png");
     const [playcount, setPlaycount] = useState(0);
     const [isloved, setIsloved] = useState(false);
     const [playbackstatus, setPlaybackstatus] = useState(false);
 
     // get tracks
     useEffect(() => {
-        console.log(`getting songs`);
+        //console.log(`getting songs`);
         const user = atob("eGZhaGlt");
         const apiKey = atob("NjMyNjk2MTY5OGVjODAzNTNiOGIwZjExMThmNzYyMzg=");
         const url = `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&limit=1&user=${user}&api_key=${apiKey}&format=json`
@@ -59,15 +59,15 @@ const NowPlayingPage = () => {
 
     //get track info (playbackcount, loved)
     useEffect(() => {
-        console.log('track changed');
+        //console.log('track changed');
         const user = atob("eGZhaGlt");
         const apiKey = atob("NjMyNjk2MTY5OGVjODAzNTNiOGIwZjExMThmNzYyMzg=");
         const trackurl = `https://ws.audioscrobbler.com/2.0/?method=track.getInfo&user=${user}&api_key=${apiKey}&artist=${encodeURI(artist)}&track=${encodeURI(track)}&format=json`
-        console.log(trackurl);
+        //console.log(trackurl);
         fetch(trackurl)
             .then(response => response.json())
             .then(data => {
-                setPlaycount(data?.track?.userplaycount)
+                setPlaycount(data?.track?.userplaycount ? data?.track?.userplaycount : 23)
                 setIsloved(data?.track?.userloved === "1" ? true : false)
             })
             .catch((error) => {
@@ -81,9 +81,9 @@ const NowPlayingPage = () => {
     useEffect(() => {
         if (track.length > 35) {
             setTitleFontSize('1.9rem')
-            console.log(`track length big big ${track.length} `)
+            //console.log(`track length big big ${track.length} `)
         }
-        console.log(`${track.length}`)
+        //console.log(`${track.length}`)
 
     }, [track])
 
@@ -92,7 +92,7 @@ const NowPlayingPage = () => {
     const [desc, setDesc] = useState("getting weather");
     //const [icon, setIcon] = useState("");
     useEffect(() => {
-        console.log('getting weather');
+        //console.log('getting weather');
         const ow_api = atob("MWYxNGQ5NTNmNjc3MzEyYzAwYjdlZjI4OTcxYjUzNjQ=");
         const locid = atob("MTE4NTIwNA==");
         const units = "metric";
