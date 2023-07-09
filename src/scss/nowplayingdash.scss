@@ -6,7 +6,7 @@
 }
 
 .bgblur {
-  backdrop-filter: blur(140px);
+  backdrop-filter: blur(140px) brightness(60%);
   width: 100vw;
   height: 100vw;
 }
@@ -34,13 +34,18 @@
 .musicinfo {
   flex-grow: 1;
   margin-left: 30px;
+  background: rgba(236, 240, 241, 0.296);
+  padding: 10px;
+  box-shadow: 0 0 20px 0.5px rgba(0, 0, 0, 0.4);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .albumart {
   width: 50%;
   margin: auto;
   width: 450px;
-  border-radius: 6px;
+  border-radius: 5px;
   position: relative;
   z-index: 2;
   margin-top: 30px;
@@ -54,7 +59,7 @@
   color: white;
   // font-size: 3rem; //30 //dynamic maybe
   margin-top: 4px;
-  margin-bottom: 0px;
+  //margin-bottom: 0px;
   overflow: scroll;
   //line-break: auto;
   display: -webkit-box;
@@ -80,8 +85,8 @@
   font-stretch: 110%;
   font-weight: 700;
   font-size: 2rem; //28
-  margin-bottom: 4px;
-  color: white;
+  //margin-bottom: 4px;
+  color: rgba(255, 255, 255, 0.9);
   text-align: left;
 }
 
@@ -90,7 +95,7 @@
   font-stretch: 110%;
   font-weight: 300;
   font-size: 1.5rem; //20
-  color: white;
+  color: rgba(255, 255, 255, 0.9);
   text-align: left;
   font-style: italic;
   overflow: hidden;
@@ -99,14 +104,14 @@
   -webkit-box-orient: vertical;
 }
 
+//temporariy removed
 .glassbg {
-  // background-color: rgba(236, 240, 241, 0.15);
-  background-color: rgba(236, 240, 241, 0.296);
-  border-radius: 6px;
-  padding-left: 7px;
-  padding-right: 7px;
-  padding-top: 1.5px;
-  padding-bottom: 1.5px;
+  // background-color: rgba(236, 240, 241, 0.296);
+  // border-radius: 6px;
+  // padding-left: 7px;
+  // padding-right: 7px;
+  // padding-top: 1.5px;
+  // padding-bottom: 1.5px;
 }
 
 .numberofplays {
@@ -185,4 +190,61 @@
   height: 100%;
   width: 100%;
   //overflow: hidden;
+}
+
+.readOnlyText {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.backButtonContainerInMusic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.goBackHomeItemInMusic {
+  color: rgba(255, 255, 255, 0.4);
+  margin-right: 20px;
+  padding: 5px;
+  text-decoration: none;
+  font-family: "Jetbrains Mono", monospace;
+  font-weight: 200;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 2px;
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  padding: 5px 5px 5px 5px;
+  margin: 20px 20px 20px 20px;
+  transition: 0.3s;
+}
+
+.goBackHomeItemInMusic:hover {
+  color: white;
+  border: 1.5px solid white;
+}
+
+.backIconFa:hover {
+  transform: rotate(-0.5turn);
+}
+
+.backIconFa {
+  padding-right: 4px;
+  margin-right: 6px;
+  vertical-align: middle;
+  transition: transform 0.5s ease 0s;
+}
+
+.goBackHomeItem:hover .backIconFa {
+  transform: rotate(-0.5turn);
+  content: "\f060";
+}
+
+//? on hover, unnecressary
+.questionSignOnHover::after {
+  content: "?";
 }

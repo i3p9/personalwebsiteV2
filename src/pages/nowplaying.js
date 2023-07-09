@@ -2,39 +2,10 @@ import React, { useEffect, useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../scss/nowplayingdash.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHistory, faCompactDisc, faHeart } from '@fortawesome/free-solid-svg-icons'
+import { faHistory, faCompactDisc, faHeart, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { Helmet } from "react-helmet"
+import { Link } from "gatsby";
 
-function getRGB(c) {
-    return parseInt(c, 16) || c;
-}
-
-function getsRGB(c) {
-    return getRGB(c) / 255 <= 0.03928
-        ? getRGB(c) / 255 / 12.92
-        : Math.pow((getRGB(c) / 255 + 0.055) / 1.055, 2.4);
-}
-
-function getLuminance(hexColor) {
-    return (
-        0.2126 * getsRGB(hexColor.substr(1, 2)) +
-        0.7152 * getsRGB(hexColor.substr(3, 2)) +
-        0.0722 * getsRGB(hexColor.substr(-2))
-    );
-}
-
-function getContrast(f, b) {
-    const L1 = getLuminance(f);
-    const L2 = getLuminance(b);
-    return (Math.max(L1, L2) + 0.05) / (Math.min(L1, L2) + 0.05);
-}
-
-function getTextColor(bgColor) {
-    const whiteContrast = getContrast(bgColor, "#ffffff");
-    const blackContrast = getContrast(bgColor, "#000000");
-
-    return whiteContrast > blackContrast ? "#ffffff" : "#000000";
-}
 
 const NowPlayingPage = () => {
     // current date/time + acts as timer as well
@@ -106,10 +77,10 @@ const NowPlayingPage = () => {
     }, [track])
 
     //Song title semi-dynamic fontsize
-    const [titleFontSize, setTitleFontSize] = useState('3rem')
+    const [titleFontSize, setTitleFontSize] = useState('2.6rem')
     useEffect(() => {
         if (track.length > 35) {
-            setTitleFontSize('1.5rem')
+            setTitleFontSize('1.9rem')
             console.log(`track length big big ${track.length} `)
         }
         console.log(`${track.length}`)
@@ -121,7 +92,6 @@ const NowPlayingPage = () => {
     const [desc, setDesc] = useState("getting weather");
     //const [icon, setIcon] = useState("");
     useEffect(() => {
-        console.log(getTextColor("#C6C49F"));
         console.log('getting weather');
         const ow_api = atob("MWYxNGQ5NTNmNjc3MzEyYzAwYjdlZjI4OTcxYjUzNjQ=");
         const locid = atob("MTE4NTIwNA==");
@@ -131,7 +101,7 @@ const NowPlayingPage = () => {
         fetch(getweather)
             .then(res => res.json())
             .then(data => {
-                setTemp(data.main.feels_like);
+                setTemp(Math.ceil(data.main.feels_like));
                 setDesc(data.weather[0].description);
                 //setIcon(data.weather[0].icon);
             })
@@ -158,20 +128,20 @@ const NowPlayingPage = () => {
             <body className='body-class-nowplaying' style={{ backgroundImage: `url(${albumart})` }}>
                 <div className="bgblur">
                     <div className='flexhead'>
-                        <div><span className='datetime glassbg'>{date.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }) + " | " + date.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })}</span></div>
-                        <div><span className="weather glassbg">Feels like {temp}°, {desc}</span></div>
+                        <div><span className='datetime glassbg readOnlyText'>{date.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }) + " | " + date.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })}</span></div>
+                        <div><span className="weather glassbg readOnlyText">Feels like {temp}°, {desc}</span></div>
                     </div>
                     <div className='flexmain'>
                         <div className='albumart-container'>
                             {albumart ? (
-                                <img className="albumart" src={albumart} alt='album art of currently playing song' />
+                                <img className="albumart readOnlyText" src={albumart} alt='album art of currently playing song' />
                             ) : (
                                 //maybe put a skeleton here!
-                                <img className="albumart" src={albumart} alt='album art of currently playing song' />
+                                <img className="albumart readOnlyText" src={albumart} alt='album art of currently playing song' />
                             )}
                         </div>
                         <div className="musicinfo">
-                            <div className="playbackStatus"><span className='glassbg'>{playbackstatus ? (
+                            <div className="playbackStatus readOnlyText"><span className='glassbg'>{playbackstatus ? (
                                 <>
                                     <FontAwesomeIcon icon={faCompactDisc} spin /> Now Playing
                                 </>
@@ -180,14 +150,17 @@ const NowPlayingPage = () => {
                                     <FontAwesomeIcon icon={faHistory} /> Last Played
                                 </>
                             )}</span></div>
-                            <div className="trackname" style={{ fontSize: titleFontSize }}><span className='glassbg'>{track}</span></div>
-                            <div className="artistname"><span className='glassbg'>{artist}</span></div>
-                            <div className="albumname"><span className='glassbg'>{album}</span></div>
-                            <div className="numberofplays">{playcount} plays</div>
-                            <div className="heartIcon">{isloved ? (
+                            <div className="trackname readOnlyText" style={{ fontSize: titleFontSize }}><span className='glassbg'>{track}</span></div>
+                            <div className="artistname readOnlyText"><span className='glassbg'>{artist}</span></div>
+                            <div className="albumname readOnlyText"><span className='glassbg'>{album}</span></div>
+                            <div className="numberofplays readOnlyText">{playcount} plays</div>
+                            <div className="heartIcon readOnlyText">{isloved ? (
                                 <FontAwesomeIcon icon={faHeart} size={'md'} />
                             ) : ""}</div>
                         </div>
+                    </div>
+                    <div className="backButtonContainerInMusic">
+                        <Link className="goBackHomeItemInMusic questionSignOnHover" to="/"><FontAwesomeIcon icon={faArrowLeft} size="1x" className="backIconFa" />go back</Link>
                     </div>
                 </div>
             </body>
