@@ -1,13 +1,21 @@
-import React, { useEffect, useState, useRef } from 'react'
+import React, { useEffect, useState } from 'react'
 import { config } from "@fortawesome/fontawesome-svg-core"
 import PlayingAnimation from './playinganimation'
+import { getCurrentlyPlaying } from '../lib/spotify'
 
 config.autoAddCss = false
 
 const NowPlaying = () => {
-    const [track, settrack] = useState("");
-    const [artist, setartist] = useState("");
-    const [playbackstatus, setplaybackstatus] = useState();
+    const [nowPlayingData, setNowPlayingData] = useState(null);
+
+    const fetchNowPlayingData = async () => {
+        try {
+            const response = await getCurrentlyPlaying();
+            setNowPlayingData(response)
+        } catch (error) {
+            console.error('Error fetching top tracks:', error);
+        }
+    }
 
     const [date, setDate] = useState(new Date());
 
@@ -23,35 +31,11 @@ const NowPlaying = () => {
 
 
     useEffect(() => {
-        const user = atob("eGZhaGlt");
-        const apiKey = atob("NjMyNjk2MTY5OGVjODAzNTNiOGIwZjExMThmNzYyMzg=");
-        let callURL = "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&limit=1&user=" + user + "&api_key=" + apiKey + "&format=json"
-
-        fetch(callURL)
-            .then(res => res.json())
-            .then(data => {
-                settrack(data.recenttracks.track[0].name)
-                setartist(data.recenttracks.track[0].artist['#text'])
-                if (data.recenttracks.track[0].hasOwnProperty('@attr')) {
-                    //console.log("In the playing thingy")
-                    setplaybackstatus(true)
-                }
-                else {
-                    setplaybackstatus(false)
-                }
-            })
-            .catch((error) => {
-                console.log(`error fetching nowplaying data ${error}`);
-            })
+        fetchNowPlayingData()
     }, [date])
 
-    //console.log(track);
     return (
-        // <a href="https://www.last.fm/user/xfahim" class="now-playing-link" target="_blank" rel="noreferrer">
-        // <Link href='/nowplaying' class='now-playing-link'>
-        //     <div className="now-playing"><FontAwesomeIcon icon={faSpotify} /> <span>{playbackstatus} </span> <span><PlayingAnimation /></span>{track} by {artist}</div>
-        // </Link>
-        <PlayingAnimation trackName={track} artistName={artist} playBackStatus={playbackstatus} />
+        <PlayingAnimation nowPlayingData={nowPlayingData} />
 
     )
 }

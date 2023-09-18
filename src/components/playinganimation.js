@@ -4,9 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSpotify } from '@fortawesome/free-brands-svg-icons'
 import '../scss/nowplayinganimationstyle.scss';
 
-const PlayingAnimation = ({ trackName, artistName, playBackStatus }) => {
+const PlayingAnimation = ({ nowPlayingData }) => {
 
-    if (playBackStatus === true) {
+    const playBackInfoText = nowPlayingData?.is_playing ? `${nowPlayingData?.track_name} by ${nowPlayingData?.artist_name}` : "Can't Connect to Spotify"
+
+    if (nowPlayingData?.is_playing === true) {
         return (
             <div className="animation-container">
                 <div className="playing">
@@ -16,7 +18,7 @@ const PlayingAnimation = ({ trackName, artistName, playBackStatus }) => {
                 </div>
                 <div className="text-container">
                     <Link href='/nowplaying' class='now-playing-link'>
-                        <span className="text"> Now Playing: {trackName} by {artistName}</span>
+                        <span className="text"> Now Playing: {playBackInfoText}</span>
                     </Link>
                 </div>
             </div>
@@ -26,7 +28,7 @@ const PlayingAnimation = ({ trackName, artistName, playBackStatus }) => {
             <div className="animation-container">
                 <div>
                     <Link href='/nowplaying' class='now-playing-link'>
-                        <span className="text"><FontAwesomeIcon icon={faSpotify} /> Last Played: {trackName} by {artistName}</span>
+                        <span className="text"><FontAwesomeIcon icon={faSpotify} /> Last Played: {playBackInfoText}</span>
                     </Link>
                 </div>
             </div>
