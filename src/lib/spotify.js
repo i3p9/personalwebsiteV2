@@ -78,6 +78,7 @@ export const getTopTracks = async () => {
 };
 
 const CURRENTLY_PLAYING_ENDPOINT = `https://api.spotify.com/v1/me/player/currently-playing`
+const RECENTLY_PLAYED_ENDPOINT = `https://api.spotify.com/v1/me/player/recently-played`
 
 export const getCurrentlyPlaying = async () => {
     const access_token = await getAccessToken();
@@ -87,7 +88,7 @@ export const getCurrentlyPlaying = async () => {
         },
     })
 
-    if (response.ok) {
+    if (response.status === 200) {
         const data = await response.json()
         const response_data = {
             is_playing: data?.is_playing,
@@ -95,6 +96,21 @@ export const getCurrentlyPlaying = async () => {
             artist_name: data?.item?.artists[0]?.name,
             album_name: data?.item?.album?.name,
             album_art: data?.item?.album?.images[0]?.url
+        }
+        return response_data
+    } else if (response.status === 204) { // if currently-playing returns 204 if not being played for a while
+        const response_recently = await fetch(RECENTLY_PLAYED_ENDPOINT, {
+            headers: {
+                Authorization: `Bearer ${access_token}`,
+            },
+        })
+        const data = await response_recently.json()
+        const response_data = {
+            is_playing: false,
+            track_name: data?.items[0]?.track?.name,
+            artist_name: data?.items[0]?.track?.artists[0]?.name,
+            album_name: data?.items[0]?.track?.album?.name,
+            album_art: data?.items[0]?.track?.album?.images[0]?.url
         }
         return response_data
     } else {

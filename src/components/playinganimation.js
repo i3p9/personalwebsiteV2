@@ -6,7 +6,7 @@ import '../scss/nowplayinganimationstyle.scss';
 
 const PlayingAnimation = ({ nowPlayingData }) => {
 
-    const playBackInfoText = nowPlayingData?.is_playing ? `${nowPlayingData?.track_name} by ${nowPlayingData?.artist_name}` : "Can't Connect to Spotify"
+    const playBackInfoText = nowPlayingData ? `${nowPlayingData?.track_name} by ${nowPlayingData?.artist_name}` : "Can't Connect to Spotify"
 
     if (nowPlayingData?.is_playing === true) {
         return (

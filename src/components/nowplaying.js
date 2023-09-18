@@ -13,7 +13,7 @@ const NowPlaying = () => {
             const response = await getCurrentlyPlaying();
             setNowPlayingData(response)
         } catch (error) {
-            console.error('Error fetching top tracks:', error);
+            console.error('Error fetching nowplaying tracks:', error);
         }
     }
 
@@ -32,6 +32,7 @@ const NowPlaying = () => {
 
     useEffect(() => {
         fetchNowPlayingData()
+        console.log(nowPlayingData);
     }, [date])
 
     return (
