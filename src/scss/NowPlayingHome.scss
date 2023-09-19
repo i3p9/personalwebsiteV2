@@ -1,0 +1,23 @@
+.nowplaying-home-text {
+  color: var(--theme-color);
+  font-family: "Untitled Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  font-kerning: normal;
+}
+
+.text-faded {
+  color: var(--text-faded) !important;
+}
+
+.small-album-art {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 2px;
+}
+
+.adjacent-container {
+  display: flex;
+  align-items: center;
+}

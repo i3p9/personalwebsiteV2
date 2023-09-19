@@ -5,22 +5,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
 import { Helmet } from "react-helmet"
 import { getCurrentlyPlaying } from '../lib/spotify'
-
+import NowPlayingAnimated from '../components/NowPlayingAnimated/NowPlayingAnimated'
 
 const NowPlayingPage = () => {
     function PlayBackStatusContainer({ status }) {
-        const animationStatus = status ? 'dash-playing' : 'dash-not-playing'
         return (
             <>
-                <div className="animation-container">
-                    <div className={animationStatus}>
-                        <span />
-                        <span />
-                        <span />
-                    </div>
-                    <div className="text-container">
-                        <span className="dash-playback-status-text"> {status ? 'Now Playing' : 'Last Played'}</span>
-                    </div>
+                <div style={{ display: "flex", alignItems: "center" }}>
+                    <NowPlayingAnimated playbackStatus={true} color={'white'} />
+                    <span className="dash-playback-status-text"> {status ? ' Now Playing' : ' Last Played'}</span>
                 </div>
             </>
         )
@@ -160,7 +153,7 @@ const NowPlayingPage = () => {
                             html,body {
                                 overflow: hidden;
                             }
-                       `}
+                    `}
                 </style>
 
             </Helmet>
