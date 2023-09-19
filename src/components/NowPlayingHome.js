@@ -36,7 +36,7 @@ const NowPlayingHome = () => {
 
     useEffect(() => {
         fetchNowPlayingData()
-        console.log(nowPlayingData);
+        //console.log(nowPlayingData);
     }, [date])
 
     const playBackInfoText = nowPlayingData ? `${nowPlayingData?.track_name} by ${nowPlayingData?.artist_name}` : "Can't Connect to Spotify"
@@ -57,7 +57,7 @@ const NowPlayingHome = () => {
                         />
                         <div>
                             <div className='adjacent-container'>
-                                <NowPlayingAnimated playbackStatus={true} />
+                                <NowPlayingAnimated playbackStatus={nowPlayingData?.is_playing} />
                                 <div style={{ fontWeight: 500, marginLeft: '5px' }} className="nowplaying-home-text">{nowPlayingData?.track_name}</div>
                             </div>
                             <div className="nowplaying-home-text text-faded">{nowPlayingData?.artist_name}</div>

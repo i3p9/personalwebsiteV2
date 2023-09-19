@@ -12,7 +12,7 @@ const NowPlayingPage = () => {
         return (
             <>
                 <div style={{ display: "flex", alignItems: "center" }}>
-                    <NowPlayingAnimated playbackStatus={true} color={'white'} />
+                    <NowPlayingAnimated playbackStatus={status} color={'white'} />
                     <span className="dash-playback-status-text"> {status ? ' Now Playing' : ' Last Played'}</span>
                 </div>
             </>
