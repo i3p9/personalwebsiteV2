@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../scss/index.scss'
 import Navbar from '../components/navbar'
-import NowPlaying from '../components/nowplaying'
+import NowPlayingHome from '../components/NowPlayingHome'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAt } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faTwitter, faLastfm } from '@fortawesome/free-brands-svg-icons'
@@ -40,7 +40,7 @@ const IndexPage = () => {
             My hobbies include space, <a href="https://open.spotify.com/user/sphincone?si=eec6f56b1c9941a2" target="_blank" rel="noreferrer" style={{ textDecoration: "none", fontStyle: "italic" }} class="hover-underline-animation">making playlists</a> and taking pictures. I also like comedy shows, I'm a big fan of SNL.
             Currently I'm working and making cool <Link to="/projects" className="hover-underline-animation" style={{ textDecoration: "none" }}>pet projects</Link>.
             {/* <div className="new-line">Note: This site is still being built. You can visit my old site here: <a href="https://old.fahim.tech">https://old.fahim.tech</a></div> */}
-            <NowPlaying />
+            <NowPlayingHome />
           </div>
           <div style={{ marginTop: 5 + 'px', marginBottom: 50 + 'px' }}>
             <a href="mailto:fahimpfaisal@gmail.com" class="home-links" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faAt} /> fahimpfaisal@gmail.com</a>

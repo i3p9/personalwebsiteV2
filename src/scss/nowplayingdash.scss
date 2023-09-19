@@ -248,3 +248,91 @@
 .questionSignOnHover::after {
   content: "?";
 }
+
+// // nowplaying animation
+// @keyframes animation {
+//   10% {
+//     transform: scaleY(0.3);
+//   }
+
+//   30% {
+//     transform: scaleY(1);
+//   }
+
+//   60% {
+//     transform: scaleY(0.5);
+//   }
+
+//   80% {
+//     transform: scaleY(0.75);
+//   }
+
+//   100% {
+//     transform: scaleY(0.5);
+//   }
+// }
+
+// .animation-container {
+//   margin-top: 5px;
+//   display: flex;
+//   align-items: center;
+// }
+
+// .text-container {
+//   margin-left: 10px; /* Adjust the spacing between the animation and text */
+// }
+
+.dash-playback-status-text {
+  font-family: "Untitled Sans", sans-serif;
+  font-size: 1.5rem; //28
+  margin-bottom: 4px;
+  color: white;
+  text-align: left;
+  font-weight: 200;
+  font-stretch: 100%;
+  margin-left: 5px;
+}
+
+// .dash-playing {
+//   position: relative;
+//   display: flex;
+//   justify-content: space-between;
+//   width: 13px;
+//   height: 13px;
+
+//   span {
+//     width: 3px;
+//     height: 100%;
+//     // background-color: #1ed760;
+//     background-color: white;
+//     border-radius: 3px;
+//     animation: animation 2.2s ease infinite alternate;
+//     content: "";
+//     transform-origin: bottom;
+//   }
+
+//   span:nth-of-type(2) {
+//     animation-delay: -2.2s;
+//   }
+
+//   span:nth-of-type(3) {
+//     animation-delay: -3.7s;
+//   }
+// }
+
+// .dash-not-playing {
+//   position: relative;
+//   display: flex;
+//   justify-content: space-between;
+//   width: 13px;
+//   height: 13px;
+
+//   span {
+//     width: 3px;
+//     height: 100%;
+//     background-color: white;
+//     border-radius: 3px;
+//     content: "";
+//     transform-origin: bottom;
+//   }
+// }
