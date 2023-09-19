@@ -1,0 +1,110 @@
+{
+    "projects": [
+        {
+            "title": "mac-setup",
+            "description": "Guide to setup a fresh macOS installation automatically, saving time and effort. Includes 3rd-party apps, ssh and gpg setups",
+            "github": "https://github.com/i3p9/mac-setup",
+            "link": "https://mac-setup.vercel.app/",
+            "tech_used": [
+                "Markdown",
+                "Javascript"
+            ]
+        },
+        {
+            "title": "LyriCatch",
+            "description": "Cross platform Python app to fetch, show and download lyrics from currently playing song. Supports Spotify and last.fm",
+            "github": "https://github.com/i3p9/lyricatch",
+            "link": "https://github.com/i3p9/lyricatch",
+            "tech_used": [
+                "Python"
+            ]
+        },
+        {
+            "title": "Text in a Bottle",
+            "description": "Simple and fast webapp made in Python to create and share text or code snippets. Has live Markdown editing and publishing, supports creating super fast and light web page to share via Markdown. Made using Flask and MongoDB. Click demo to use the site.",
+            "github": "https://github.com/i3p9/txt-in-a-bottle",
+            "link": "https://txtinabottle.herokuapp.com",
+            "tech_used": [
+                "Javascript",
+                "Python",
+                "Flask",
+                "MongoDB"
+            ]
+        },
+        {
+            "title": "Deepfake Detection using Xception",
+            "description": "Detecting deepfakes specially found in Social Media and usually low-res using custom Xception Deep Learning",
+            "github": "https://github.com/i3p9/deepfake-detection-with-xception",
+            "link": "NA",
+            "tech_used": [
+                "Python"
+            ]
+        },
+        {
+            "title": "Jumpstart",
+            "description": "Webapp for installing/updating multiple macOS Applications at once, amazingly faster compared to installing applications one-by-one.",
+            "github": "https://github.com/i3p9/Jumpstart",
+            "link": "https://jumpstart-mac.vercel.app/",
+            "tech_used": [
+                "Javascript",
+                "MDB",
+                "Bash"
+            ]
+        },
+        {
+            "title": "Personalwebsite V1",
+            "description": "V1 of my personal website made using Jekyll, Ruby.",
+            "github": "https://github.com/i3p9/personalwebsite",
+            "link": "https://legacy.ffaisal.com/",
+            "tech_used": [
+                "Jekyll",
+                "Ruby"
+            ]
+        },
+        {
+            "title": "Imgbb.sh",
+            "description": "Command line app to access Imgbb, supports uploading/deleting multiple images from various sources",
+            "github": "https://github.com/i3p9/imgbb.sh",
+            "link": "https://i3p9.github.io/imgbb.sh/",
+            "tech_used": [
+                "Bash"
+            ]
+        },
+        {
+            "title": "python-scripts",
+            "description": "Collection of smaller python projects including Covid Data Tracker, OCR to Google, Tesla Charge Reminder etc.",
+            "github": "https://github.com/i3p9/python-scripts",
+            "link": "NA",
+            "tech_used": [
+                "Python"
+            ]
+        },
+        {
+            "title": "Reach: WiFi Analyzer",
+            "description": "Reach automagically searches and figures out the best wifi channel for your network avoiding populated channels.",
+            "github": "https://github.com/reach",
+            "link": "NA",
+            "tech_used": [
+                "Python"
+            ]
+        },
+        {
+            "title": "shell-scripts",
+            "description": "Big collection of shell scripts including automating complete computer setup, system services and apps. Also includes a number of script to automate uploading, downloading and backing up computer.",
+            "github": "https://github.com/i3p9/shell-scripts",
+            "link": "NA",
+            "tech_used": [
+                "Bash"
+            ]
+        },
+        {
+            "title": "title",
+            "description": "ss",
+            "github": "ll",
+            "link": "link",
+            "tech_used": [
+                "tech"
+            ]
+        }
+    ]
+}
