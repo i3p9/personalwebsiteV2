@@ -1,0 +1,320 @@
+{
+    "archive": [
+        {
+            "title": "Transcript Search",
+            "year": "2023",
+            "github": "https://github.com/i3p9/transcript-search",
+            "link": "https://momentseeker.vercel.app/",
+            "tech_used": [
+                "React"
+            ]
+        },
+        {
+            "title": "Loadshedding Tracker",
+            "year": "2023",
+            "github": "https://github.com/i3p9/loadshedding-tracker",
+            "link": "https://powerstats.vercel.app/",
+            "tech_used": [
+                "React"
+            ]
+        },
+        {
+            "title": "Wordle in React",
+            "year": "2023",
+            "github": "https://github.com/i3p9/word-clone",
+            "link": "https://wordle-clone-i3p9.vercel.app/",
+            "tech_used": [
+                "React"
+            ]
+        },
+        {
+            "title": "Kokhon Khabo? (Ramadan Helper)",
+            "year": "2022",
+            "github": "https://github.com/i3p9/khabo-when",
+            "link": "https://iftar-i3p9.vercel.app/",
+            "tech_used": [
+                "Javascript"
+            ]
+        },
+        {
+            "title": "What to do?",
+            "year": "2022",
+            "github": "https://github.com/i3p9/react-todo",
+            "link": "https://fahim-todo.vercel.app/",
+            "tech_used": [
+                "React"
+            ]
+        },
+        {
+            "title": "IMDB Link Parser",
+            "year": "2022",
+            "github": "https://github.com/i3p9/imdb-link-parser",
+            "link": "NA",
+            "tech_used": [
+                "Python"
+            ]
+        },
+        {
+            "title": "Text in a Bottle",
+            "year": "2021",
+            "github": "https://github.com/i3p9/txt-in-a-bottle",
+            "link": "https://txtinabottle.herokuapp.com",
+            "tech_used": [
+                "Python",
+                "Flask"
+            ]
+        },
+        {
+            "title": "Personal Website V2",
+            "year": "2021",
+            "github": "https://github.com/i3p9/personalwebsitev2",
+            "link": "https://fahim.vercel.app",
+            "tech_used": [
+                "React",
+                "GatsbyJS"
+            ]
+        },
+        {
+            "title": "LyriCatch - Python Lyrics App",
+            "year": "2021",
+            "github": "https://github.com/i3p9/lyricatch",
+            "link": "NA",
+            "tech_used": [
+                "Python"
+            ]
+        },
+        {
+            "title": "Opencore ScanPolicy Generator",
+            "year": "2021",
+            "github": "https://github.com/i3p9/oc-scanpolicy",
+            "link": "https://oc-scanpolicy.vercel.app/",
+            "tech_used": [
+                "Javascript"
+            ]
+        },
+        {
+            "title": "Jumpstart - Ninite for macOS",
+            "year": "2021",
+            "github": "https://github.com/i3p9/jumpstart",
+            "link": "https://jumpstart.fahim.tech/",
+            "tech_used": [
+                "Javascript",
+                "Bash"
+            ]
+        },
+        {
+            "title": "Imgbb.sh - Imgbb CLI",
+            "year": "2021",
+            "github": "https://github.com/i3p9/imgbb.sh",
+            "link": "https://i3p9.github.io/imgbb.sh/",
+            "tech_used": [
+                "Shell",
+                "macOS/Linux"
+            ]
+        },
+        {
+            "title": "script-commands (macOS Automation)",
+            "year": "2021",
+            "github": "https://github.com/i3p9/script-commands",
+            "link": "NA",
+            "tech_used": [
+                "Shell",
+                "Python"
+            ]
+        },
+        {
+            "title": "raycast-scripts",
+            "year": "2021",
+            "github": "https://github.com/i3p9/raycast-scripts",
+            "link": "NA",
+            "tech_used": [
+                "Raycast",
+                "Shell",
+                "AS"
+            ]
+        },
+        {
+            "title": "Radar - Doppler Radar Interface",
+            "year": "2021",
+            "github": "https://github.com/i3p9/radar",
+            "link": "https://radar.fahim.tech/",
+            "tech_used": [
+                "Javascript"
+            ]
+        },
+        {
+            "title": "MovieDB",
+            "year": "2021",
+            "github": "https://github.com/i3p9/node-moviedb",
+            "link": "NA",
+            "tech_used": [
+                "NodeJS",
+                "MongoDB"
+            ]
+        },
+        {
+            "title": "Deekfake Detection with Xception",
+            "year": "2021",
+            "github": "https://github.com/i3p9/deepfake-detection-with-xception",
+            "link": "NA",
+            "tech_used": [
+                "Python"
+            ]
+        },
+        {
+            "title": "python-scripts (Collection of apps)",
+            "year": "2021",
+            "github": "https://github.com/i3p9/python-scripts",
+            "link": "NA",
+            "tech_used": [
+                "Python"
+            ]
+        },
+        {
+            "title": "Personal Website V1",
+            "year": "2021",
+            "github": "https://github.com/i3p9/personalwebsite",
+            "link": "https://fahimold.vercel.app/",
+            "tech_used": [
+                "Jekyll",
+                "Ruby"
+            ]
+        },
+        {
+            "title": "VSCode Essential Pack (Extension)",
+            "year": "2020",
+            "github": "https://github.com/i3p9/vscode-essential-pack",
+            "link": "NA",
+            "tech_used": [
+                "Typescript"
+            ]
+        },
+        {
+            "title": "mac-setup",
+            "year": "2020",
+            "github": "https://github.com/i3p9/mac-setup",
+            "link": "https://mac-setup.vercel.app/",
+            "tech_used": [
+                "DocifyJS",
+                "MD"
+            ]
+        },
+        {
+            "title": "unified-remote-custom",
+            "year": "2020",
+            "github": "https://github.com/i3p9/unified-remote-custom",
+            "link": "NA",
+            "tech_used": [
+                "Lua",
+                "Python"
+            ]
+        },
+        {
+            "title": "BigSur-OpenCore-Lenovo-T450s-efi",
+            "year": "2020",
+            "github": "https://github.com/i3p9/Hackintosh-BigSur-Catalina-OpenCore-Lenovo-T450s-efi",
+            "link": "NA",
+            "tech_used": [
+                "macOS",
+                "Obj-C"
+            ]
+        },
+        {
+            "title": "Pizzahouse",
+            "year": "2020",
+            "github": "https://github.com/i3p9/pizzahouse",
+            "link": "NA",
+            "tech_used": [
+                "Laravel",
+                "Vue"
+            ]
+        },
+        {
+            "title": "QandA",
+            "year": "2020",
+            "github": "https://github.com/i3p9/laravel-qa-new",
+            "link": "NA",
+            "tech_used": [
+                "Laravel",
+                "Vue"
+            ]
+        },
+        {
+            "title": "Edusharev2",
+            "year": "2020",
+            "github": "https://github.com/i3p9/Edusharev2",
+            "link": "NA",
+            "tech_used": [
+                "PHP",
+                "MySQL"
+            ]
+        },
+        {
+            "title": "MSI-Z97-Hackintosh-Opencore",
+            "year": "2019",
+            "github": "https://github.com/i3p9/MSI-Z97-Hackintosh-Opencore",
+            "link": "NA",
+            "tech_used": [
+                "macOS",
+                "Obj-C"
+            ]
+        },
+        {
+            "title": "InstaNot - Instagram Clone",
+            "year": "2019",
+            "github": "https://github.com/i3p9/InstaNot",
+            "link": "NA",
+            "tech_used": [
+                "Java"
+            ]
+        },
+        {
+            "title": "Custom-HiDPI-Resolution-Mac",
+            "year": "2018",
+            "github": "https://github.com/i3p9/Custom-HiDPI-Resolution-Mac",
+            "link": "NA",
+            "tech_used": [
+                "Shell",
+                "Obj-C"
+            ]
+        },
+        {
+            "title": "ocr2google",
+            "year": "2018",
+            "github": "https://github.com/i3p9/ocr2google",
+            "link": "NA",
+            "tech_used": [
+                "Python",
+                "Shell"
+            ]
+        },
+        {
+            "title": "pebble-watchface-minimal",
+            "year": "2017",
+            "github": "https://github.com/i3p9/pebble-watchface-minimal",
+            "link": "NA",
+            "tech_used": [
+                "Python",
+                "C"
+            ]
+        },
+        {
+            "title": "Fun2Text - Chrome Extension",
+            "year": "2016",
+            "github": "https://github.com/i3p9/fun2fuck",
+            "link": "NA",
+            "tech_used": [
+                "Javascript"
+            ]
+        },
+        {
+            "title": "Steamlinkfix",
+            "year": "2016",
+            "github": "https://github.com/i3p9/Steamlinkfix",
+            "link": "NA",
+            "tech_used": [
+                "Javascript"
+            ]
+        }
+    ]
+}
