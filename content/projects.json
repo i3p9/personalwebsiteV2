@@ -1,6 +1,60 @@
 {
     "projects": [
         {
+            "title": "RTArchive",
+            "description": "Frontend to explore Archived roosterteeth.com data, youtube-like player. Also supports bulk downloading and browsing in a Netflix-like UI with Search. Backend using Express, PostgresSQL.",
+            "github": "https://github.com/i3p9/roosterteeth-data-explorer",
+            "link": "https://rtarchive.xyz",
+            "tech_used": [
+                "Javascript",
+                "React",
+                "Express",
+                "PostgreSQL",
+                "Cloudflare CDN"
+            ]
+        },
+        {
+            "title": "Rooster",
+            "description": "Custom archiver that downloaded and uploaded ~42K roosterteeth.com video content to Internet Archive running concurrently on VMs. Handles all media type and metadata extraction, as well as custom API support for fallback metadata.",
+            "github": "https://github.com/i3p9/rooster",
+            "link": "https://archive.org/search?query=scanner%3Arooster",
+            "tech_used": [
+                "Python"
+            ]
+        },
+        {
+            "title": "Spotify Stats",
+            "description": "Webapp to explore your Spotify History, nowplaying UI, and a Playlist maker / Recommendation Engine using individuals spotify history and openAI model to suggest music based on scenario, mood and time/day.",
+            "github": "https://github.com/i3p9/spotify-stats",
+            "link": "https://spotify-stats-react.vercel.app",
+            "tech_used": [
+                "NextJS"
+            ]
+        },
+        {
+            "title": "Moment Seeker - Transcript Search",
+            "description": "Fullstack webapp to search your favorite moments / lines in various TV shows. Data sanitize and migration using Python, backend, search and front-end is built using Express/React. TVDB/Subscene API for Transcript and Episode tagging.",
+            "github": "https://github.com/i3p9/transcript-search",
+            "link": "https://momentseeker.vercel.app/",
+            "tech_used": [
+                "Python",
+                "PostgreSQL",
+                "MongoDB",
+                "Express",
+                "React"
+            ]
+        },
+        {
+            "title": "talk2human",
+            "description": "Very simple app to find and talk to human customer care agents as fast as possible on various customer care call centers. (eg. Banks/E-Commerce Websites)",
+            "github": "https://github.com/i3p9/talk-to-human",
+            "link": "https://talk2human.vercel.app/",
+            "tech_used": [
+                "React",
+                "PostgreSQL"
+            ]
+        },
+        {
             "title": "mac-setup",
             "description": "Guide to setup a fresh macOS installation automatically, saving time and effort. Includes 3rd-party apps, ssh and gpg setups",
             "github": "https://github.com/i3p9/mac-setup",

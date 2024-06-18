@@ -23,11 +23,11 @@ const getTokenFromLocalStorage = () => {
     if (access_token && expires_in) {
         const expired_time = parseInt(expires_in, 10)
         if (expired_time > Date.now()) {
-            console.log('should have accesstoken');
-            console.log('token: ', access_token);
+            //('should have accesstoken');
+            //console.log('token: ', access_token);
             return access_token
         } else {
-            console.log('token expired :(');
+            //console.log('token expired :(');
             return null
         }
     }
@@ -114,6 +114,6 @@ export const getCurrentlyPlaying = async () => {
         }
         return response_data
     } else {
-        console.log('something went wrong, oop');
+        console.log('something went wrong, oops');
     }
 }

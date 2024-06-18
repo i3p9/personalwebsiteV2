@@ -32,7 +32,6 @@ const ArchivePage = () => {
                                     <td>{item.title}</td>
                                     <td class="d-none d-md-table-cell">
                                         {item.tech_used.map((tech, index) => {
-                                            console.log(tech);
                                             return (
                                                 <span class="techused-font">{tech}</span>
                                             );

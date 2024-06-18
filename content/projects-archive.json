@@ -1,6 +1,55 @@
 {
     "archive": [
         {
+            "title": "talk2human",
+            "year": "2024",
+            "github": "https://github.com/i3p9/talk-to-human",
+            "link": "https://talk2human.vercel.app",
+            "tech_used": [
+                "React",
+                "PostgreSQL"
+            ]
+        },
+        {
+            "title": "RTArchive",
+            "year": "2024",
+            "github": "https://github.com/i3p9/transcript-search",
+            "link": "https://momentseeker.vercel.app/",
+            "tech_used": [
+                "React"
+            ]
+        },
+        {
+            "title": "RTArchive",
+            "year": "2024",
+            "github": "https://github.com/i3p9/roosterteeth-data-explorer",
+            "link": "https://rtarchive.xyz",
+            "tech_used": [
+                "Javascript",
+                "React",
+                "Express",
+                "PostgreSQL"
+            ]
+        },
+        {
+            "title": "Rooster",
+            "year": "2024",
+            "github": "https://github.com/i3p9/rooster",
+            "link": "",
+            "tech_used": [
+                "Python"
+            ]
+        },
+        {
+            "title": "Spotify Stats",
+            "year": "2024",
+            "github": "https://github.com/i3p9/spotify-stats",
+            "link": "https://spotify-stats-react.vercel.app",
+            "tech_used": [
+                "NextJS"
+            ]
+        },
+        {
             "title": "Transcript Search",
             "year": "2023",
             "github": "https://github.com/i3p9/transcript-search",
