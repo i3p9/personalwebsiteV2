@@ -10,7 +10,7 @@ config.autoAddCss = false
 
 const NowPlayingHome = () => {
     const [nowPlayingData, setNowPlayingData] = useState(null)
-    const [detailedNowPlayingVisibility, setDetailedNowPlayingVisibility] = useState(false)
+    const [detailedNowPlayingVisibility, setDetailedNowPlayingVisibility] = useState(true)
 
     const fetchNowPlayingData = async () => {
         try {
